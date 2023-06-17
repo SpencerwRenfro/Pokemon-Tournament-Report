@@ -12,27 +12,11 @@ function EventItem(props) {
     let countryImage = `${process.env.PUBLIC_URL}/images/svgs/${props.country}`;
     let USA = `${process.env.PUBLIC_URL}/images/svgs/USA.svg`;
     let deckImg = `${process.env.PUBLIC_URL}/images/svgs/${props.deckImg}`
+    let listImg = `${process.env.PUBLIC_URL}/images/svgs/list.svg`
 
     return (
         <div>
-            {/* <div>
-                <h1 className="text-3xl font-bold">{props.title}</h1>
-                <img src={countryImage} />
-                <img src={EventImage} alt="" />
-            </div>
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div>
-                <img src="" alt="" />
-                <h1>{props.deck}</h1>
-            </div>
-            <div>
-                <h3>{props.place}</h3>
-                <h3>+{props.points}</h3>
-                <h3>List: (place link here)</h3>
-            </div> */}
-            <div className="card w-96 bg-base-300 shadow-xl my-10">
+            <div className="card    my-10 flex items-center mx-20" sytle={{width: "auto", border: "solid 2px green"}}>
                 <div className="flex gap-4">
                     <h1 className="text-3xl font-bold">{props.title}</h1>
                     <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
@@ -41,8 +25,31 @@ function EventItem(props) {
                     <img className="px-4" src={EventImage} alt="" />
                 </figure>
                 <div className="">
-                    <div><img src={deckImg}  alt="deck type" /></div>
+                    <div><img src={deckImg} alt="deck type" /></div>
                     <div><h1 >{props.deckTitle}</h1></div>
+                </div>
+                <div className="stats shadow" style={{width: "30rem"}}>
+
+                    <div className="stat">
+                        <div className="stat-figure text-primary">
+                        </div>
+                        <div className="stat-value">Place</div>
+                        <div className="stat-value text-primary">{props.place}</div>
+                    </div>
+
+                    <div className="stat">
+                        <div className="stat-figure text-secondary">
+                        </div>
+                        <div className="stat-value">Points</div>
+                        <div className="stat-value text-secondary">+{props.points}</div>
+                        
+                    </div>
+
+                    <div className="stat">
+                        <div className="stat-value" style={{width: "auto"}}>List</div>
+                        <img src={listImg} alt="img for link" />
+                    </div>
+
                 </div>
                 <div className="card-body">
                     <p>{props.content}</p>
