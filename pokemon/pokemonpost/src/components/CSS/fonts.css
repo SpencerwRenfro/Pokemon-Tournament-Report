@@ -1,0 +1,11 @@
+.font {
+    font-family: 'Work Sans', sans-serif;
+    border: solid 3px green;
+    font-weight: bold;
+
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}

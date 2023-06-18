@@ -1,0 +1,15 @@
+work sans google fonts
+
+and add tyler renfro next to the avatar photo
+
+do layout in columns
+
+6 columns wide (try with 8 on large device)
+
+convention center imagges set to background image and set to cover so they are always the same size everytime.
+
+add dark theme at all times
+
+list to open up in new tab
+
+ADD IDS TO ALL NEW DATA
