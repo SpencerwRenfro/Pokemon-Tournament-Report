@@ -5,7 +5,82 @@
 
 }
 
+.title.h1 {}
+
+.bold {
+    font-weight: bold;
+}
+
 .title {
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
+    color: #FFFFFF;
+    size: 48px;
+    line-height: 107%;
+    /* font-style: bold; */
+}
+
+.date {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    size: 13px;
+    line-height: 22px;
+    /* color: #FFFFFF; */
+}
+
+.intro {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    size: 20px;
+}
+
+.light {
+    font-family: 'Work Sans', sans-serif;
+    size: 20px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+.link {
+    color:#90CAF9
+
+}
+
+.regular {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    size: 20px;
+   
+}
+
+/* table for card list title */
+.medium {
+    size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.large {
+    size: 34px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.sevenHundred {
+    font-weight: bold, 700;
+    size: 20px;
+    line-height: 36px;  
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.nonWhite {
+    color: #bcbcbc;
+}
+
+.spacing{
+    line-height: 36px;
 }

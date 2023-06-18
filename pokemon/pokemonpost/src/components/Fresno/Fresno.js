@@ -5,7 +5,7 @@ function Fresno(props) {
     let day1 = `${process.env.PUBLIC_URL}/images/Fresno/dayOne.svg`;
     let r1 = `${process.env.PUBLIC_URL}/images/Fresno/R1.png`;
     let R1 = `${process.env.PUBLIC_URL}/images/Fresno/H1.png`;
-    let japanFlag = `${process.env.PUBLIC_URL}/images/Fresno/japanFlag.png`;
+    let japanFlag = `${process.env.PUBLIC_URL}/images/Fresno/japan.svg`;
     let japanEvent = `${process.env.PUBLIC_URL}/images/Fresno/japanEvent.png`;
     return (
         <div>
@@ -123,6 +123,7 @@ function Fresno(props) {
                     <div className="flex gap-4">
                         <h1 className="text-3xl font-bold">Worlds Invite-Final Standing</h1>
                         <img src={japanFlag} style={{ width: '50px', height: '50px' }} alt="event location" />
+                        
                     </div>
                     <figure>
                         <img className="px-4" src={japanEvent} alt="" />

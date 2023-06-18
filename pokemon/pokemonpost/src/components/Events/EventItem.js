@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link} from "react-router-dom";
 
 function EventItem(props) {
 
@@ -18,6 +19,7 @@ function EventItem(props) {
     
 
     let tempID;
+    let tempListID; 
 
     if (props.title === "Local Events") {
         multiDeckImg1 = `${process.env.PUBLIC_URL}/images/svgs/${props.multiDeckImg[0]}`;
@@ -25,12 +27,16 @@ function EventItem(props) {
         multiDeckImg3 = `${process.env.PUBLIC_URL}/images/svgs/${props.multiDeckImg[2]}`;
         // tempID = props.href;
         tempID = props.localsEventHref;
+       
         console.log(tempID + "\nTHIS IS TEMP ID FOR LOCALS EVENT");
     } else if(props.title === "Salt Lake"){
         tempID = props.saltLakeHref;
+        tempListID = props.listId;
         console.log('temp ID' + tempID);
+        console.log('listID' + props.listId);
     } else if(props.title === "Peoria, Illinois"){
         tempID = props.peoriaHref;
+        tempListID = props.listId;
         console.log('temp ID' + tempID);
     } else if(props.title === 'Alrington Texas'){
         tempID = props.arlingtonHref
@@ -60,9 +66,9 @@ function EventItem(props) {
 
             {
                 props.title === "Local Events" ?
-                <div id={tempID} className="card    my-10 flex items-center mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
+                <div id={tempID} className="card  my-10 flex items-center mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
                 <div className="flex gap-4">
-                    <h1 className="text-3xl font-bold">{props.title}</h1>
+                    <h1 className="text-3xl font-bold white">{props.title}</h1>
                     <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
                 </div>
                 <figure>
@@ -107,22 +113,21 @@ function EventItem(props) {
                     </div>
                     :
 
-                    <div id={tempID} className="card    my-10 flex items-center mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
-                    <div className="flex gap-4">
-                        <h1 className="text-3xl font-bold">{props.title}</h1>
+                    <div id={tempID} className="card mt-5 mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
+                    <div className="flex col justify-start gap-4">
+                        <h1 className="text-3xl font-bold white ">{props.title}</h1>
                         <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
                     </div>
-                    <figure>
-                        <img className="px-4" src={EventImage} alt="" />
+                    <figure style={{border: "solid 3px green"}} className='flex justify-start'>
+                        <img className="my-2" src={EventImage} alt="" />
                     </figure>
-                    <div className="">
+                    <div className="flex row gap-4 pb-5">
                         <div>
                             <img src={deckImg} alt="deck type" />
                         </div>
                         <div><h1 >{props.deckTitle}</h1></div>
                     </div>
-                    <div className="stats shadow" style={{ width: "30rem" }}>
-    
+                    <div className="stats shadow flex justify-center" style={{ width: "30rem" }}>
                         <div className="stat">
                             <div className="stat-figure text-primary">
                             </div>
@@ -140,8 +145,12 @@ function EventItem(props) {
     
                         <div className="stat">
                             <div className="stat-value" style={{ width: "auto" }}>List</div>
+                            <Link target="_blank"rel="noopener noreferrer" to={`/${props.listId}`}>
                             <img src={listImg} alt="img for link" />
+                            </Link>
                         </div>
+
+      
     
                     </div>
                     <div className="card-body">
