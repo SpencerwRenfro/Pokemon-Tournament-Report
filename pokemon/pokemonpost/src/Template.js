@@ -220,39 +220,30 @@ export default function Template() {
 
 
   return (
-    <div className=" grid grid-cols-1 m-32 nonWhite spacing">
-      <div className=" card-body  mx-10 col-span-1">
-
-        <div className="col-span-1">
-          <p className='date nonWhite'>Jun 14, 2023</p>
-          <h1 className="text-6xl title pb-1 white">
-            Fresnooo Top 128 - A Season Summary + My First and Last Tournament Report
+    <div className="grid grid-cols-12 m-32 nonWhite spacing gap-4">
+      <div className="col-start-4 col-span-6">
+          <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
+          <h1 className="text-5xl title pb-1 white">
+          Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
-          <div className="flex py-10">
-            <img style={{ width: "50px", height: "50px", marginRight: "10px" }} src={headshot} alt="headshot" />
-            <h2 className='pl-2 place-self-center data '>
+          <div className="flex mt-5 mb-20">
+            <img width="40" height="40" className="mr-3" src={headshot} alt="headshot" />
+            <p className='pl-2 place-self-center data uppercase tracking-wider'>
               Tyler Renfro
-            </h2>
+            </p>
           </div>
 
-          <h1>
-            <span className='sevenHundred white'>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
-              end of the BST-SVI format.
-            </span>
-            <span className='regular'> I decided
+          <p>
+            <strong>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
+              end of the BST-SVI format.</strong> I decided
               to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
-              community. I wanted to make osmething that's becomming a bit of a lost art, something classic - a tournament report.
-            </span>
-          </h1>
-          <p className="my-10">
-            With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
-            today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like
-            <span> </span>
-            <span className="link">The Charizard Lounge</span><span> </span>
-            and<span> </span><span className='link'>Six-Prizes</span><span> </span>
-
-            are long gone. Information is everywhere and keeping a deck list private is a way of the past.
+              community. I wanted to make osmething that's becomming a bit of a lost art, something classic—a tournament report.
           </p>
+          <p className="my-5">
+            With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
+            today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like <a href="#" className="link">The Charizard Lounge</a> and <a href="#" className='link'>Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
+          </p>
+
           <p>
             So sit back, relax, and enjoy an article that attempts to pay homage  to the the legacy content of the greats.
             The days before players had access to all the top 8 lists from <span className='link'>limitless.</span> Before
@@ -315,7 +306,6 @@ export default function Template() {
             My strategy for deck choice was what I believed to be the strongest deck in format combined with what I could pilot the best.
             Here's a brief recap of my tournament history, deck choices (with lists), and short summary of my runs.
           </p>
-        </div>
 
 
 
