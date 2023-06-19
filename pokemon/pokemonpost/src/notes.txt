@@ -12,5 +12,8 @@ convention center imagges set to background image and set to cover so they are a
 add fixed widths to round components
 remove extra file folder directory
 
+for light theme the list svg for each event is hidden
 
 
+for light and dark theme style use css class white for bold white titles and headings and use
+css class nonwhite for paragraphs and sub texts
