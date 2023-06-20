@@ -121,22 +121,19 @@ function Fresno(props) {
         <div>
             <div>
                 <div id={props.weekBefore}>
-                    <h1>The Week of Fresno</h1>
-                    <p>Leading up to the event, Fresno was my last chance qualifier for Worlds. I didn't get into NAIC due to the mishandling of registration, despite being exactly on time for waves two and three, but I digress.</p>
-                    <p>I wanted to play something fun, but also something I could confidently finish a best-of-three. I decided on Mew as it reminded me fondly of the first deck I ever played in tournaments—Nightmarch. </p>
-                    <p>To prepare for the event, I booked a coaching session with Tord Reklev. I get on the call with Tord and he asks me about deck choice, and I tell him I'm set on Mew. He takes a list from Milwuakee and covers sequencing while challenging me on opening hand scenarios—it’s perfect. He's a great coach and I wish I did more sessions with him earlier this season.</p>
-                    <p>My biggest take away from the session was to not be a greedy Mew player with Cram-o-matics and to always go with the sure thing. At the end he tells me the changes he would make along with the reasoning for why. The base list was Michael Long's (congrats on getting unbanned) and Tord made these suggestions:</p>
-                    <div style={{ backgroundColor: "black" }}>
-                        <p>-2 Nest Ball, -1 Penny, -1 Escape Rope, -1 Choice Belt, </p>
-                        <p>+3 Feather Ball, +1 Forest Seal Stone, +1 Cleansing Gloves</p>
+                    <h1 className="text-3xl font-bold mb-5">The Week of Fresno</h1>
+                    <p className="leading-7 mb-5">Leading up to the event, Fresno was my last chance qualifier for Worlds. I didn't get into NAIC due to the mishandling of registration, despite being exactly on time for waves two and three, but I digress. I wanted to play something fun, but also something I could confidently finish a best-of-three. I decided on Mew as it reminded me fondly of the first deck I ever played in tournaments—Nightmarch.</p>
+                    <p className="leading-7 mb-5">To prepare for the event, I booked a coaching session with Tord Reklev. I get on the call with Tord and he asks me about deck choice, and I tell him I'm set on Mew. He takes a list from Milwuakee and covers sequencing while challenging me on opening hand scenarios—it’s perfect. He's a great coach and I wish I did more sessions with him earlier this season.</p>
+                    <p className="leading-7 mb-5">My biggest take away from the session was to not be a greedy Mew player with Cram-o-matics and to always go with the sure thing. At the end he tells me the changes he would make along with the reasoning for why. The base list was Michael Long's (congrats on getting unbanned) and Tord made these suggestions:</p>
+                    <div className="py-5 pl-10 mb-10 card bg-base-100 rounded">
+                        <p className="italic mb-3">-2 Nest Ball, -1 Penny, -1 Escape Rope, -1 Choice Belt, </p>
+                        <p className="italic">+3 Feather Ball, +1 Forest Seal Stone, +1 Cleansing Gloves</p>
                     </div>
-
-                    <img src={img1} alt="list" />
-                    <p>I feel great about the list and decide to send it as it looks perfect. I decide to play on PTCGLive to hammer out some sequencing and the lessons Tord taught me. After a few games the app requires an update and injects the latest expansion, Paldea Evolved. I’m unable to play any games of value and close the software.</p>
+                    <img className="w-full mb-5" src={img1} alt="list" />
+                    <p className="leading-7 mb-5">I feel great about the list and decide to send it as it looks perfect. I decide to play on PTCGLive to hammer out some sequencing and the lessons Tord taught me. After a few games the app requires an update and injects the latest expansion, Paldea Evolved. I’m unable to play any games of value and close the software.</p>
                 </div>
                 <div id={props.fresnoDay1}>
-                    <h1>Fresno Day 1</h1>
-
+                    <h1 className="text-3xl font-bold mb-5">Fresno Day 1</h1>
                     <img src={day1} alt="day one" />
                     <p>7:30AM Checkin line because Team North West didn’t rent the venue for Friday.</p>
                     <div className='flex my-10 '>

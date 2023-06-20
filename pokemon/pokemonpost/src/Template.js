@@ -278,7 +278,7 @@ export default function Template() {
           </div>
 
 
-          <h2 id={aboutMeHref} className="text-4xl font-bold white py-10">About Me</h2>
+          <h2 id={aboutMeHref} className="text-4xl font-bold white my-5">About Me</h2>
           <div >
             <img className="w-full mb-3 rounded-[25px]" src={aboutMe} alt="Me and Mike" />
             <p className="italic w-full mb-5 text-center">That’s me and one of the best friends I’ve made playing this silly game, Mike Hopkins.</p>
@@ -289,7 +289,7 @@ export default function Template() {
             64s—my best placement being 50th, I've never been on stream, and I have never qualified for Worlds—I
             simply enjoy the hobby.
           </p>
-          <h2 id={seasonSummary} className="text-4xl font-bold white pb-10">
+          <h2 id={seasonSummary} className="text-4xl font-bold white pb-5">
             2022–2023 Season Summary
           </h2>
           <p className='pb-10 leading-7'>
