@@ -194,7 +194,7 @@ export default function Template() {
   ];
 
   let headshot = `${process.env.PUBLIC_URL}/images/svgs/headshot.svg`;
-  let aboutMe = `${process.env.PUBLIC_URL}/images/svgs/aboutMe.svg`;
+  let aboutMe = `${process.env.PUBLIC_URL}/images/jpgs/tyler-mike.jpg`;
   let newDataID = eventSchema.map((item) => (item = item.id));
   console.log(newDataID + "NEW ID");
 
@@ -220,8 +220,8 @@ export default function Template() {
 
 
   return (
-    <div className="grid grid-cols-12 m-32 nonWhite spacing gap-4">
-      <div className="col-start-4 col-span-6">
+    <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">
+      <div className="col-start-5 col-span-4">
           <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
           <h1 className="text-5xl title pb-1 white">
           Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
@@ -237,7 +237,7 @@ export default function Template() {
             <strong>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
               end of the BST-SVI format.</strong> I decided
               to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
-              community. I wanted to make osmething that's becomming a bit of a lost art, something classic—a tournament report.
+              community. I wanted to make something that's becomming a bit of a lost art, something classic—a tournament report.
           </p>
           <p className="my-5">
             With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
@@ -277,9 +277,10 @@ export default function Template() {
           </div>
 
 
-          <h1 id={aboutMeHref} className="text-3xl font-bold white py-10">About Me</h1>
+          <h2 id={aboutMeHref} className="text-4xl font-bold white py-10">About Me</h2>
           <div >
-            <img className="pb-10" src={aboutMe} alt="Me and Mike" />
+            <img className="w-full mb-3 rounded-[25px]" src={aboutMe} alt="Me and Mike" />
+            <p className="italic w-full mb-5 text-center">That’s me and one of the best friends I’ve made playing this silly game, Mike Hopkins.</p>
           </div>
           <p className='pb-10'>My name is Tyler Renfro, and I've been playing the Pokémon TCG for the past 8 years
             (although I originally learned how to play on Pokémon Play It! In 1998). Most of you have
@@ -287,9 +288,9 @@ export default function Template() {
             64s—my best placement being 50th, I've never been on stream, and I have never qualified for Worlds—I
             simply enjoy the hobby.
           </p>
-          <h1 id={seasonSummary} className="text-3xl font-bold white pb-10">
+          <h2 id={seasonSummary} className="text-4xl font-bold white pb-10">
             2022–2023 Season Summary
-          </h1>
+          </h2>
           <p className='pb-10'>
             As mentioned, part of this articles purpose is to help myself process the season, and how my run for a Worlds
             invite went. The year started with the announcement that the 2023 World Championships would be hosted in Yokohama,
