@@ -61,104 +61,88 @@ function EventItem(props) {
     }
 
     return (
-        <div>
-           
-
+        <div className="grid cols">   
             {
                 props.title === "Local Events" ?
-                <div id={tempID} className="card  my-10 flex items-center mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
-                <div className="flex gap-4">
-                    <h1 className="text-3xl font-bold white">{props.title}</h1>
-                    <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
+                <div id={tempID}>
+                <h1 className="text-3xl font-bold text-white mb-3">{props.title}</h1>
+                <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${EventImage})`, backgroundRepeat: 'no-repeat' }}>
                 </div>
-                <figure>
-                    <img className="px-4" src={EventImage} alt="" />
-                </figure>
+                <div className="mb-5">
+                    <p>{props.content}</p>
+                </div>
+                <table className="table table-auto w-full mb-10">
+                    <thead>
+                        <tr>
+                            <th>Deck</th>
+                            <th>Event</th>
+                            <th>Place</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src={multiDeckImg1} alt="deck type" /></td>
+                            <td>{props.localEventType[0]}</td>
+                            <td>{props.multiPlace[0]}</td>
+                            <td>+{props.multiPoints[0]}</td>
+                        </tr>
+                        <tr>
+                            <td><img src={multiDeckImg2} alt="deck type" /></td>
+                            <td>{props.localEventType[1]}</td>
+                            <td>{props.multiPlace[1]}</td>
+                            <td>+{props.multiPoints[1]}</td>
+                        </tr>
+                        <tr>
+                            <td><img src={multiDeckImg3} alt="deck type" /></td>
+                            <td>{props.localEventType[2]}</td>
+                            <td>{props.multiPlace[2]}</td>
+                            <td>+{props.multiPoints[2]}</td>
+                        </tr>                      
+                    </tbody>
+                </table>
 
-
-                    <div className="stats shadow" style={{ }}>
-
-
-                        <div>
-                            <div className="stat-value" style={{ width: "auto" }}>Deck</div>
-                            <img src={multiDeckImg1} alt="deck type" />
-                            <img src={multiDeckImg2} alt="deck type" />
-                            <img src={multiDeckImg3} alt="deck type" />
-                        </div>
-
-                        <div className="stat">
-                            <div className="stat-value">Event</div>
-                            <div>{props.localEventType[0]}</div>
-                            <div>{props.localEventType[1]}</div>
-                            <div>{props.localEventType[2]}</div>
-                        </div>
-
-                        <div className="stat">
-                            <div className="stat-value" style={{ width: "auto" }}>Place</div>
-                            <div>{props.multiPlace[0]}</div>
-                            <div>{props.multiPlace[1]}</div>
-                            <div>{props.multiPlace[2]}</div>
-                        </div>
-
-                        <div className="stat">
-                            <div className="stat-value" style={{ width: "auto" }}>Points</div>
-                            <div>+{props.multiPoints[0]}</div>
-                            <div>+{props.multiPoints[1]}</div>
-                            <div>+{props.multiPoints[2]}</div>
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <p>{props.content}</p>
-                    </div>
-                    </div>
+                </div>
                     :
-
-                    <div id={tempID} className="card mt-5 mx-20">
-                    <div className="flex col justify-start gap-4">
-                        <h1 className="text-3xl font-bold text-white ">{props.title}</h1>
-                        <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
-                    </div>
-                    <figure  className='flex justify-start'>
-                        <img className="my-2" src={EventImage} alt="" />
-                    </figure>
-                    <div className="flex row gap-4 pb-5 my-2">
-                        <div>
-                            <img src={deckImg} alt="deck type" />
+                    <div className="mb-10" id={tempID}>
+                        <div className="flex row items-center justify-start gap-4 mb-3">
+                            <h1 className="text-3xl font-bold text-white ">{props.title}</h1>
+                            <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
                         </div>
-                        <div><h1 className="text-white">{props.deckTitle}</h1></div>
-                    </div>
-                    <div className="grid grid-cols-3 stats py-2" style={{  backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)", borderRadius: "0" }}>
-                        <div className="stat">
-                            <p className="uppercase tracking-wider text-center">Place</p>
-                            <div className="uppercase tracking-wider text-center font-bold text-white">{props.place}</div>
+                        <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${EventImage})`, backgroundRepeat: 'no-repeat' }}>                            
                         </div>
-    
-                        <div className="stat">
-                            
-                            <p className="uppercase tracking-wider text-center">Points</p>
-                            <p className="text-center font-bold text-white">+{props.points}</p>
-    
+                        <div className="flex row items-center gap-4 pb-5">
+                            <div>
+                                <img src={deckImg} alt="deck type" />
+                            </div>
+                            <h3 className="text-white text-2xl font-bold">{props.deckTitle}</h3>
                         </div>
-    
+                        <div className="grid grid-cols-3 stats py-2 mb-5" style={{  backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)", borderRadius: "0" }}>
+                            <div className="stat">
+                            <p className="uppercase tracking-wider text-center text-xs mb-1">Place</p>
+                            <p className="uppercase tracking-wider text-center font-bold text-2xl">{props.place}</p>
+                        </div>
+                        <div className="stat">                            
+                            <p className="uppercase tracking-wider text-center text-xs mb-1">Points</p>
+                            <p className="text-center font-bold text-center text-2xl">+{props.points}</p>
+                        </div>
                         <div className="stat">
-                            <div className="uppercase tracking-wider text-center" style={{ width: "auto" }}>List</div>
+                            <div className="uppercase tracking-wider text-center text-xs mb-1" style={{ width: "auto" }}>List</div>
                             <Link target="_blank"rel="noopener noreferrer" to={`/${props.listId}`}>
                                 <div className='flex justify-center'>
-                                <img className="" src={listImg} alt="img for link" />
+                                <button className="btn btn-ghost">
+                                    <svg  className="inline-block w-6 h-6 mr-2 stroke-current" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="48"><path d="M149.825-280Q137-280 128.5-288.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-450 128.5-458.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-620 128.5-628.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5ZM290-280v-60h550v60H290Zm0-170v-60h550v60H290Zm0-170v-60h550v60H290Z"/></svg>
+                                </button>
                                 </div>
                             </Link>
                         </div>
-
-      
-    
                     </div>
-                    <div className="card-body">
-                        <p>{props.content}</p>
-                        <p>{props.dayTwoContent}</p>
+                    <div>
+                        <p className="leading-7 mb-5">{props.content}</p>
+                        <p className="leading-7">{props.dayTwoContent}</p>
                     </div>
                 </div>
             }
-
         </div>
     )
 }

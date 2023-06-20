@@ -222,7 +222,7 @@ export default function Template() {
   return (
     <div className="container mx-auto">
     <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">   
-         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-5 xl:col-span-4">
+         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
           <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
           <h1 className="text-5xl title pb-1 white font-bold">
           Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
@@ -234,18 +234,18 @@ export default function Template() {
             </p>
           </div>
 
-          <p>
+          <p className="leading-7">
             <strong>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
               end of the BST-SVI format.</strong> I decided
               to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
               community. I wanted to make something that's becomming a bit of a lost art, something classic—a tournament report.
           </p>
-          <p className="my-5">
+          <p className="my-5 leading-7">
             With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
             today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like <a href="#" className="link">The Charizard Lounge</a> and <a href="#" className='link'>Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
           </p>
 
-          <p>
+          <p className="leading-7">
             So sit back, relax, and enjoy an article that attempts to pay homage  to the the legacy content of the greats.
             The days before players had access to all the top 8 lists from <span className='link'>limitless.</span> Before
             <span> </span>
@@ -283,7 +283,7 @@ export default function Template() {
             <img className="w-full mb-3 rounded-[25px]" src={aboutMe} alt="Me and Mike" />
             <p className="italic w-full mb-5 text-center">That’s me and one of the best friends I’ve made playing this silly game, Mike Hopkins.</p>
           </div>
-          <p className='pb-10'>My name is Tyler Renfro, and I've been playing the Pokémon TCG for the past 8 years
+          <p className='pb-10 leading-7'>My name is Tyler Renfro, and I've been playing the Pokémon TCG for the past 8 years
             (although I originally learned how to play on Pokémon Play It! In 1998). Most of you have
             probably not heard of me. I'm far from a top player—I have zero top cut finishes, aside from top
             64s—my best placement being 50th, I've never been on stream, and I have never qualified for Worlds—I
@@ -292,29 +292,22 @@ export default function Template() {
           <h2 id={seasonSummary} className="text-4xl font-bold white pb-10">
             2022–2023 Season Summary
           </h2>
-          <p className='pb-10'>
+          <p className='pb-10 leading-7'>
             As mentioned, part of this articles purpose is to help myself process the season, and how my run for a Worlds
             invite went. The year started with the announcement that the 2023 World Championships would be hosted in Yokohama,
             Japan. A little cliché, but this year, the Worlds was going to fall on my 31st birthday. I considered this season
             be my final push for chasing an invite and I wanted to go big. I planned to attend as many events as possible to pursue
             this goal and make my dream happen.
           </p>
-          <p className='pb-10'>
+          <p className='pb-10 leading-7'>
             Throughout the season, I didn't have an in-person testing group as a result of relocating to Colorado during the COVID-19
             pandemic. Without local play I was struggled to find players in my area to practice with. For the entire season, the only
             games I played on paper were at premiere events.
           </p>
-          <p className='pb-10'>
+          <p className='pb-10 leading-7'>
             My strategy for deck choice was what I believed to be the strongest deck in format combined with what I could pilot the best.
             Here's a brief recap of my tournament history, deck choices (with lists), and short summary of my runs.
           </p>
-
-
-
-
-
-
-
         <div>
           <EventItem
           listId={eventSchema[0].listId}
