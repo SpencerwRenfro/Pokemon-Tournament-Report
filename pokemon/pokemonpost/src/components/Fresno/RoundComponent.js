@@ -3,22 +3,26 @@ import React from 'react'
 import "../CSS/fonts.css"
 function RoundComponent(props) {
     return (
-        <div>
-            <div className='flex'>
-                <h1 className='mr-5 white roundFonts'>{props.roundId}</h1>
-                <div style={props.roundResult === "W" ? {background: "linear-gradient(0deg, rgba(102, 187, 106, 1), rgba(20, 20, 20, 0.9)), linear-gradient(0deg, #180605, #180605)", width: "700px"} : (props.roundResult === "T" ?
-                {backgroundColor: "yellow"} : {background: "linear-gradient(0deg, rgba(24, 6, 5, 1), rgba(0, 0, 0, 0.9)), linear-gradient(0deg, #180605, #180605)"
-                    })}
-                     className={props.roundResult === "T" ? "tie flex" : "flex"}
-                >
-                    <h1 className='mr-2 white roundFonts'>{props.roundResult}</h1>
-                    <div className='flex flex-col'>
-                        <h1 className='mr-40 white roundFonts'>{props.roundTitle}</h1>
-                        <h1>{props.deckTitle}</h1>
+        <div className="grid-rows-2 flex flex-row gap-8 mb-5">
+            <p className='roundFonts self-center text-center font-bold text-2xl'>{props.roundId}</p>
+            <div style={props.roundResult === "W" ? {background: "rgb(2 44 34)"} : (props.roundResult === "T" ?
+            {backgroundColor: "#191106"} : {background: "#020101"
+                })}
+                // TODO: get single class name instead of duplicate
+                    className={props.roundResult === "T" ? "tie flex basis-full flex basis-full py-3 px-3 rounded gap-4" : "flex basis-full py-3 px-3 rounded gap-4"}
+            >
+                <p className='text-2xl font-bold self-center'>{props.roundResult}</p>
+                <div className="flex justify-between basis-full content-evenly">
+                    <div >
+                        <p className='text-2xl font-bold'>{props.roundTitle}</p>
+                        <p className="text-xs">{props.deckTitle}</p>
                     </div>
-               <img src={`${process.env.PUBLIC_URL}/images/Rounds/${props.deckImg}`} alt="Deck type "/>
-               {/* <img src={roundOne}/> */}
+                    <div className="flex items-center">
+                        <img src={`${process.env.PUBLIC_URL}/images/Rounds/${props.deckImg}`} alt="Deck type "/>
+                    </div>                    
                 </div>
+            
+            {/* <img src={roundOne}/> */}
             </div>
         </div>
     )
