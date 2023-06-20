@@ -1,4 +1,4 @@
-.font {
+/* .font {
     font-family: 'Work Sans', sans-serif;
     border: solid 3px green;
     font-weight: bold;
@@ -18,17 +18,17 @@
     size: 48px;
     line-height: 107%;
     /* font-style: bold; */
-}
 
-.date {
+
+/* .date {
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     size: 13px;
-    line-height: 22px;
+    line-height: 22px; */
     /* color: #FFFFFF; */
-}
 
-.intro {
+
+/* .intro {
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     size: 20px;
@@ -52,10 +52,10 @@
     font-weight: 400;
     size: 20px;
    
-}
+}  */
 
 /* table for card list title */
-.medium {
+/* .medium {
     size: 24px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
@@ -83,4 +83,4 @@
 
 .spacing{
     line-height: 36px;
-}
+} */

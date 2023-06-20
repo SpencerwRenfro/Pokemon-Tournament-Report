@@ -33,7 +33,7 @@ export default function Template() {
       img: 'SaltLake.svg',
       deckImg: 'MewGenesect.svg',
       deckTitle: 'Mew Genesect',
-      place: 542,
+      place: "542",
       points: 0,
       list: '',
       content: 'My first event of the year. Unfortunately I start with a bad run with a bad list, not much else to say about it',
@@ -47,7 +47,7 @@ export default function Template() {
       img: 'Peoria.svg',
       deckImg: 'MewGenesect.svg',
       deckTitle: 'Mew Genesect',
-      place: 50,
+      place: "50",
       points: 50,
       list: '',
       content: 'I had to earn my spot in day two the hard way by defeating a Kyurem VMAX player in an epic game three by OHKOing a giant kyurem VMAX on the last turn of the game with all four Power Tablets and a Choive Belt',
@@ -61,7 +61,7 @@ export default function Template() {
       img: 'Arlington.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 113,
+      place: "113",
       points: 30,
       list: '',
       content: "Before Lugia was polished to perfection, I'm on Tord's winning list from LAIC. I didn't have a great run, and honestly I was suppoed to lose round nine and leave without points. At the end of game three my opponent fails an attack with Lumineon V-they don't realize Aurora Energy is missing after announcing Acqua Return. A mistake that ultimately swings the game in my favor",
@@ -74,7 +74,7 @@ export default function Template() {
       img: 'Toronto.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 144,
+      place: "144",
       points: 30,
       list: '',
       content: "I start the day 5-0, but end at 6-2-1 because I took an intentional draw against a Mew player in round 9. ",
@@ -88,7 +88,7 @@ export default function Template() {
       img: 'Orlando.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 1185,
+      place: '1,185',
       points: 0,
       list: '',
       content: "Bad matchups and some unlucky draws that didn't allow for the turn two double Archeops. I dropped pretty early from this tournament. ",
@@ -101,7 +101,7 @@ export default function Template() {
       img: 'Knoxville.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 58,
+      place: "58",
       points: 50,
       list: '',
       content: "Day one was tough, I started 0-1 had to win round 9 to get into day two, which makes for a long and stressful day.",
@@ -114,7 +114,7 @@ export default function Template() {
       img: 'Vancouver.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 447,
+      place: "447",
       points: 0,
       list: '',
       content: "This tournament was bittersweet. I was happy to make new friends at the event, but I stayed in a hotel by myself and had a bad run.",
@@ -127,7 +127,7 @@ export default function Template() {
       img: 'FortWayne.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 167,
+      place: "167",
       points: 30,
       list: '',
       content: "Pretty mediocre run and I didn't deserve the 256 finish. My round nine opponent Jessica Burden-Cheresna was nice enough to give me the win instead of forcing a tie. She said it was because I was kind and patient with her about the time she took on her turns and decisions with Flower Selecting.",
@@ -140,7 +140,7 @@ export default function Template() {
       img: 'EUIC.svg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
-      place: 542,
+      place: "542",
       points: 0,
       list: '',
       content: "I was with the group that invented the tournament winning deck Arc/Dura/Pix. I even considered countering it with a 1-1 Urshifu VMAX since so many of players were on it. However, I let those guys convince me that it hurt the consistency of Lugia. Although, one of them did say slotting it was the move if I was going for day two, but I wasn't, my goals were low. I was aiming for a top 256 because that's all I needed—I didn't have a winners mentality.",
@@ -171,7 +171,7 @@ export default function Template() {
       img: 'Portland.svg',
       deckImg: 'Gardevoir.svg',
       deckTitle: 'Gardevoir',
-      place: 179,
+      place: "179",
       points: 30,
       list: '',
       content: "I start the day at 5-0-1 and unfortunately the lack of not playing games between events catches up to me in round seven. I fail to get Manaphy out against turbo Lostbox when I have the opportunity and get punished with a turn one Moonlight Shuriken.",
@@ -220,10 +220,11 @@ export default function Template() {
 
 
   return (
-    <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">
-      <div className="col-start-5 col-span-4">
+    <div className="container mx-auto">
+    <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">   
+         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-5 xl:col-span-4">
           <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
-          <h1 className="text-5xl title pb-1 white">
+          <h1 className="text-5xl title pb-1 white font-bold">
           Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
           <div className="flex mt-5 mb-20">
@@ -534,6 +535,7 @@ export default function Template() {
 
 
 
+    </div>
     </div>
   )
 }

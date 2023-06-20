@@ -113,40 +113,39 @@ function EventItem(props) {
                     </div>
                     :
 
-                    <div id={tempID} className="card mt-5 mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
+                    <div id={tempID} className="card mt-5 mx-20">
                     <div className="flex col justify-start gap-4">
-                        <h1 className="text-3xl font-bold white ">{props.title}</h1>
+                        <h1 className="text-3xl font-bold text-white ">{props.title}</h1>
                         <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
                     </div>
-                    <figure style={{border: "solid 3px green"}} className='flex justify-start'>
+                    <figure  className='flex justify-start'>
                         <img className="my-2" src={EventImage} alt="" />
                     </figure>
-                    <div className="flex row gap-4 pb-5">
+                    <div className="flex row gap-4 pb-5 my-2">
                         <div>
                             <img src={deckImg} alt="deck type" />
                         </div>
-                        <div><h1 >{props.deckTitle}</h1></div>
+                        <div><h1 className="text-white">{props.deckTitle}</h1></div>
                     </div>
-                    <div className="stats shadow flex justify-center" style={{ width: "30rem" }}>
+                    <div className="grid grid-cols-3 stats py-2" style={{  backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)", borderRadius: "0" }}>
                         <div className="stat">
-                            <div className="stat-figure text-primary">
-                            </div>
-                            <div className="stat-value">Place</div>
-                            <div className="stat-value text-primary">{props.place}</div>
+                            <p className="uppercase tracking-wider text-center">Place</p>
+                            <div className="uppercase tracking-wider text-center font-bold text-white">{props.place}</div>
                         </div>
     
                         <div className="stat">
-                            <div className="stat-figure text-secondary">
-                            </div>
-                            <div className="stat-value">Points</div>
-                            <div className="stat-value text-secondary">+{props.points}</div>
+                            
+                            <p className="uppercase tracking-wider text-center">Points</p>
+                            <p className="text-center font-bold text-white">+{props.points}</p>
     
                         </div>
     
                         <div className="stat">
-                            <div className="stat-value" style={{ width: "auto" }}>List</div>
+                            <div className="uppercase tracking-wider text-center" style={{ width: "auto" }}>List</div>
                             <Link target="_blank"rel="noopener noreferrer" to={`/${props.listId}`}>
-                            <img src={listImg} alt="img for link" />
+                                <div className='flex justify-center'>
+                                <img className="" src={listImg} alt="img for link" />
+                                </div>
                             </Link>
                         </div>
 
