@@ -31,18 +31,18 @@ function EventItem(props) {
        
         console.log(tempID + "\nTHIS IS TEMP ID FOR LOCALS EVENT");
     } else if(props.title === "Peoria, Illinois"){
-        tempID = props.saltLakeHref;
+        tempID = props.peoriaHref;
         tempListID = props.listId;
         console.log('temp ID' + tempID);
         console.log('listID' + props.listId);
     } else if(props.title === "Salt Lake City, Utah"){
-        tempID = props.peoriaHref;
+        tempID = props.saltLakeHref;
         tempListID = props.listId;
         console.log('temp ID' + tempID);
     } else if(props.title === 'Toronto, Canada'){
-        tempID = props.arlingtonHref
+        tempID = props.torontoHref
     } else if(props.title ===  'Arlington, Texas'){
-        tempID = props.torontoHref;
+        tempID = props.arlingtonHref;
     } else if(props.title === 'Orlando, Florida') {
         tempID = props.orlandoHref;
     } else if(props.title === 'Knoxville, Tennesse') {

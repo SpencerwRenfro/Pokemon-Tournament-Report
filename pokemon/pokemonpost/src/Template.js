@@ -26,7 +26,7 @@ export default function Template() {
 
   const eventSchema = [
     {
-      listId: 'listOne',
+      listId: 'listTwo',
       id: 'e0',
       title: 'Peoria, Illinois',
       country: 'USA.svg',
@@ -40,7 +40,7 @@ export default function Template() {
       dayTwoContent: 'I start day two 3-0, and in round thirteen I hit a mirror match. I start and end my turn with a lone Oricorio in the active. THis starts my bad beat and from there I lose out ending with a top 64 finish.'
     },
     {
-      listId: 'listTwo',
+      listId: 'listOne',
       id: 'e1',
       title: 'Salt Lake City, Utah',
       country: 'USA.svg',
@@ -360,7 +360,7 @@ export default function Template() {
           />
 
           
-<EventItem
+          <EventItem
             arlingtonHref={newDataID[3]}
             id={eventSchema[3].id}
             title={eventSchema[3].title}
