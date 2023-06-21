@@ -6,6 +6,7 @@ function EventItem(props) {
 
   
     let eventImage = `${process.env.PUBLIC_URL}/images/Convention_Centers/${props.image}`
+    let locationFlag = `${process.env.PUBLIC_URL}/images/Location_Flags/${props.country}`
    
     let countryImage = `${process.env.PUBLIC_URL}/images/svgs/${props.country}`;
 

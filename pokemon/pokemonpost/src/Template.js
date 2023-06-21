@@ -29,7 +29,7 @@ export default function Template() {
       listId: 'listTwo',
       id: 'e0',
       title: 'Peoria, Illinois',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'peoria.jpg',
       deckImg: 'MewGenesect.svg',
       deckTitle: 'Mew Genesect',
@@ -43,7 +43,7 @@ export default function Template() {
       listId: 'listOne',
       id: 'e1',
       title: 'Salt Lake City, Utah',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'utah.jpg',
       deckImg: 'MewGenesect.svg',
       deckTitle: 'Mew Genesect',
@@ -57,7 +57,7 @@ export default function Template() {
     {
       id: 'e2',
       title: 'Toronto, Canada',
-      country: 'Canada.svg',
+      country: 'canada.svg',
       img: 'toronto.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -70,7 +70,7 @@ export default function Template() {
     {
       id: 'e3',
       title: 'Arlington, Texas',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: "arlington.jpg",
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -84,7 +84,7 @@ export default function Template() {
     {
       id: 'e4',
       title: 'Orlando, Florida',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'orlando.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -97,7 +97,7 @@ export default function Template() {
     {
       id: 'e5',
       title: 'Knoxville, Tennesse',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'knoxvillle.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -110,7 +110,7 @@ export default function Template() {
     {
       id: 'e6',
       title: 'Vancouver, Canada',
-      country: 'Canada.svg',
+      country: 'canada.svg',
       img: 'vancouver.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -123,7 +123,7 @@ export default function Template() {
     {
       id: 'e7',
       title: 'Fort Wayne, Indiana',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'fort-wayne.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -136,7 +136,7 @@ export default function Template() {
     {
       id: 'e8',
       title: 'EUIC, London',
-      country: 'England.svg',
+      country: 'uk.svg',
       img: 'london.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
@@ -149,7 +149,7 @@ export default function Template() {
     {
       id: 'e9',
       title: 'Local Events',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'locals.jpg',
       deckImg: '',
       deckTitle: '',
@@ -167,7 +167,7 @@ export default function Template() {
     {
       id: 'e10',
       title: 'Portland, Oregon',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'portland.jpg',
       deckImg: 'Gardevoir.svg',
       deckTitle: 'Gardevoir',
@@ -180,7 +180,7 @@ export default function Template() {
     {
       id: 'e11',
       title: 'Milwaukee, Wisconsin',
-      country: 'USA.svg',
+      country: 'united-states.svg',
       img: 'milwuakee.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
