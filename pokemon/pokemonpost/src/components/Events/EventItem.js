@@ -67,8 +67,11 @@ function EventItem(props) {
             {
                 props.title === "Local Events" ?
                 <div id={tempID}>
-                    <h1 className="text-3xl font-bold mb-3">{props.title}</h1>
-                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>
+                    <div className="flex row items-center justify-start gap-4 mb-3">
+                        <h1 className="text-3xl font-bold mb-3">{props.title}</h1>
+                        <img src={locationFlag} className="rounded" style={{ width: '35px', }} alt="event location" />
+                    </div>
+                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat',  }}>
                     </div>
                     <div className="mb-5">
                         <p>{props.content}</p>
@@ -108,7 +111,7 @@ function EventItem(props) {
                 <div className="mb-10" id={tempID}>
                     <div className="flex row items-center justify-start gap-4 mb-3">
                         <h1 className="text-3xl font-bold">{props.title}</h1>
-                        <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
+                        <img className="rounded" src={locationFlag} style={{ width: '35px'}} alt="event location" />
                     </div>
                     <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>                            
                     </div>
