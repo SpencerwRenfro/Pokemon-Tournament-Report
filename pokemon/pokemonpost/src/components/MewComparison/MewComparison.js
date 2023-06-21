@@ -6,119 +6,52 @@ function MewComparison(props) {
     let overteching = `${process.env.PUBLIC_URL}/images/Cards/tech-group.png`
     return (
         <div id={props.mewComparison}>
-            <h1>Top 8 Mew Comparison</h1>
-            <p>Comparing the list I played against the ones that made top 8, I genuinely think the top 8 lists are bad. I don't care that Andrew started 12-0 or that they both made top 8. Andrew is a great player with insane plot armor and the Judge + Path to the Peak combo is oppressive—simple as that. The list I played is better and you are welcome to disagree and publish your own article about it.</p>
-            <h1>3rd - Andrew Hedrick</h1>
+            <h2 className="text-3xl font-bold mb-3">Top 8 Mew Comparison</h2>
+            <p className="leading-7 mb-5">Comparing the list I played against the ones that made top 8, I genuinely think the top 8 lists are bad. I don't care that Andrew started 12-0 or that they both made top 8. Andrew is a great player with insane plot armor and the Judge + Path to the Peak combo is oppressive—simple as that. The list I played is better and you are welcome to disagree and publish your own article about it.</p>
+            <h5 className="text-xl mb-5">3rd - Andrew Hedrick</h5>
             <div className="overflow-x-auto">
-                <table className="table">
+                <div className="table border-separate rounded mb-10 pb-5" style={{ border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                     <thead>
                         <tr>
-                            <th>Pokémon (11)</th>
-                            <th>Trainer (45)</th>
-                            <th>Energy (4)</th>
+                            <th className="px-10">Pokémon (11)</th>
+                            <th className="px-10">Trainer (45)</th>
+                            <th className="px-10">Energy (4)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {/* row 1 */}
                         <tr>
-                            <td>4 Mew V </td>
-                            <td>3 Judge</td>
-                            <td>4 Double Turbo</td>
-                        </tr>
-                        {/* row 2 */}
-                        <tr>
-                            <th>3 MEW VMAX</th>
-                            <td>3 Boss's Orders</td>
-                            <td>Energy</td>
-                        </tr>
-                        {/* row 3 */}
-                        <tr>
-                            <th>4 Genesect V</th>
-                            <td>1 Roxanne</td>
-
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Penny</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>4 Power Tablet</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>4 Battle VIP Pass</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>4 Ultra Ball</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>4 Cram-o-matic</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>4 Lost Vacuum</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>2 Nest Ball</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>2 Switch Cart</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Escape Rope</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Feather Ball</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Pal Pad</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Echoing Horn</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>3 Forest Seal Stone</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>2 Choice Belt</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>3 Path to the Peak</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>1 Lost City</td>
-                            <td></td>
-                        </tr>
+                            <td className="align-top px-10" style={{ borderRight: "solid 1px rgba(166, 173, 186, 0.1)" }}>
+                                <p className="mb-3">4 Mew V</p>
+                                <p className="mb-3">3 Mew VMAX </p>
+                                <p className="mb-3">4 Genesect V</p>
+                            </td>
+                            <td className="align-top px-10" style={{ borderRight: "solid 1px rgba(166, 173, 186, 0.1)" }}>
+                                <p className="mb-3">3 Path to the Peak</p>
+                                <p className="mb-3">1 Lost City</p>
+                                <p className="mb-3">3 Judge</p>
+                                <p className="mb-3">3 Boss’s Orders</p>
+                                <p className="mb-3">1 Roxanne</p>
+                                <p className="mb-3">1 Penny</p>
+                                <p className="mb-3">4 Power Tablet</p>
+                                <p className="mb-3">4 Battle VIP Pass</p>
+                                <p className="mb-3">4 Ultra Ball</p>
+                                <p className="mb-3">4 Cram-o-matic</p>
+                                <p className="mb-3">4 Lost Vacuum </p>
+                                <p className="mb-3">2 Nest Ball</p>
+                                <p className="mb-3">2 Switch Cart</p>
+                                <p className="mb-3">1 Escape Rope</p>
+                                <p className="mb-3">1 Feather Ball</p>
+                                <p className="mb-3">1 Pal Pad</p>
+                                <p className="mb-3">1 Echoing Horn</p>
+                                <p className="mb-3">3 Forest Seal Stone</p>
+                                <p className="mb-3">2 Choice Belt</p>                    
+                            </td>
+                            <td className="align-top px-10">
+                                <p className="mb-3">4 Double Turbo Energy</p>
+                            </td>
+                        </tr>                        
                     </tbody>
-                </table>
+                </div>
             </div>
             <h1>8th - Le Bui</h1>
             <div className="overflow-x-auto">
@@ -354,8 +287,6 @@ function MewComparison(props) {
                     </tbody>
                 </table>
             </div>
-
-
             <p className="leading-7 mb-10">To articulate why I think the list is bad it mainly comes down to Feather Ball over Nest Ball and Supporters. Without going into a full-blown autistic rant about four cards, below is a brief summary on my reasoning.</p>
             {/* grid layouts */}
             <div className="grid grid-cols-12 gap-8">
@@ -391,8 +322,6 @@ function MewComparison(props) {
             </div>
             <div className="divider my-5"></div>
             <p className="leading-7 mb-5">I fully believe that with better draws, or in the command of a better pilot Tord’s list could have made top 8 or even taken down the entire event. Day one felt so smooth and perfect, but my hands in day two were packed with bad luck, rough opening hand decisions, and every round I was forced to discard resources that I knew I couldn't to win.</p>
-
-
         </div>
     )
 }
