@@ -130,7 +130,7 @@ function Fresno(props) {
                         <p className="italic">+3 Feather Ball, +1 Forest Seal Stone, +1 Cleansing Gloves</p>
                     </div>
                     <img className="w-full mb-5 rounded-[25px]" src={img1} alt="list" />
-                    <p className="leading-7 mb-5">I feel great about the list and decide to send it as it looks perfect. I decide to play on PTCGLive to hammer out some sequencing and the lessons Tord taught me. After a few games the app requires an update and injects the latest expansion, Paldea Evolved. I’m unable to play any games of value and close the software.</p>
+                    <p className="leading-7 mb-10">I feel great about the list and decide to send it as it looks perfect. I decide to play on PTCGLive to hammer out some sequencing and the lessons Tord taught me. After a few games the app requires an update and injects the latest expansion, Paldea Evolved. I’m unable to play any games of value and close the software.</p>
                 </div>
                 <div id={props.fresnoDay1}>
                     <h1 className="text-3xl font-bold mb-5">Fresno Day 1</h1>
@@ -277,32 +277,22 @@ function Fresno(props) {
                     <p className="leading-7 mb-5">I am playing on full tilt at this point, and should have reached out to my team for support before the round started. </p>
                     <p className="leading-7 mb-5">My opponent opens Ralts, but then benches two Klefki and retreats to one. I’m in for a long, slow, game. Luckily, I had a Forest Seal Stone in hand to help me get started. Slowly but surely I KO the Klefkis to get setup and eventually win the game.</p>
                     <p className="leading-7 mb-5">Game 2 my opponent opens Ralts and passes. The door is wide open, except my hand is awful, and I struggle to start. Finally time is called and I need to prevent my opponent from making a Sky Seal Stone Play with their benched Zacian V. Digging for a big combo play with only two modifiers in deck feels risky. Plus I'd have to bump Path to the Peak for my opponent to have a chance. I opt to keep my stadium in play and KO their Shining Arcana Gardevoir. My opponent starts the turn with a twinkle in their eye and starts styling on me—they have it all. The game ends with Sky Seal Stone activated to OHKO my Mew VMax. Tie.</p>
-                    <p className="leading-7 mb-5">While I’m waiting to sign the match slip my opponent is holding hostage, they also do me the favor of gleefully explaining the play-by-play of what had happened on the last turn of the game—incase I missed it the first time. After watching them happily circle TIE, I grab my things and walk over to sign my drop slip. I’m not going to Yokohoma, I did not earn my invite to the 2023 World Championships.</p>
-                    <div className="MB-10">
+                    <p className="leading-7 mb-10">While I’m waiting to sign the match slip my opponent is holding hostage, they also do me the favor of gleefully explaining the play-by-play of what had happened on the last turn of the game—incase I missed it the first time. After watching them happily circle TIE, I grab my things and walk over to sign my drop slip. I’m not going to Yokohoma, I did not earn my invite to the 2023 World Championships.</p>
+                    <div className="mb-20">
                         <div className="flex row items-center justify-start gap-4 mb-3">
-                            <h1 className="text-3xl font-bold">Worlds Invite-Final Standing</h1>
+                            <h1 className="text-3xl font-bold">Worlds Invite, Final Standing</h1>
                             <img src={japanFlag} style={{ width: '50px', height: '50px' }} alt="event location" />
                         </div>
-                        <figure>
-                            <img className="px-4" src={japanEvent} alt="" />
-                        </figure>
-
-                        <div className="stats shadow" style={{ width: "auto" }}>
-
-
+                        <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${japanEvent})`, backgroundRepeat: 'no-repeat',  }}></div>
+                        <div className="grid grid-cols-2 stats py-2 mb-5" style={{  backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                             <div className="stat">
-                                <div className="stat-figure text-secondary">
-                                </div>
-                                <div className="stat-value">POINT TOTAL</div>
-                                <div className="stat-value text-secondary">320/350</div>
-
+                                <p className="uppercase tracking-wider text-center text-xs mb-1">Point Total</p>
+                                <p className="uppercase tracking-wider text-center font-bold text-2xl">320/350</p>
                             </div>
-
                             <div className="stat">
-                                <div className="stat-value" style={{ width: "auto" }}>EVENTS ATTENDED</div>
-                                <div className="stat-value text-secondary">20</div>
-                            </div>
-
+                                <p className="uppercase tracking-wider text-center text-xs mb-1">Events Attended</p>
+                                <p className="uppercase tracking-wider text-center font-bold text-2xl">20</p>
+                            </div>                            
                         </div>
                     </div>
                 </div>

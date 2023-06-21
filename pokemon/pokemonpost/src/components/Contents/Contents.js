@@ -12,10 +12,10 @@ function Contents(props) {
             <p className='my-1'><a href={`#${props.aboutMeHref}`}>About Me</a></p>
             <p className='my-1'><a href={`#${props.seasonSummary}`}>2022-2023 Season Summary</a></p>
             <ul className="max-w-md space-y-1 list-disc list-inside pb-5">
-            <li><a href={`#${props.peoriaHref}`}>Peoria</a></li>
             <li><a href={`#${props.saltLakeHref}`}>Salt Lake</a></li>
-            <li><a href={`#${props.torontoHref}`}>Toronto</a></li>
+            <li><a href={`#${props.peoriaHref}`}>Peoria</a></li>
             <li><a href={`#${props.arlingtonHref}`}>Arlington</a></li>
+            <li><a href={`#${props.torontoHref}`}>Toronto</a></li>
             <li><a href={`#${props.orlandoHref}`}>Orlando</a></li>
             <li><a href={`#${props.knoxvilleHref}`}>Knoxville</a></li>
             <li><a href={`#${props.vancouverHref}`}>Vancouver</a></li>
