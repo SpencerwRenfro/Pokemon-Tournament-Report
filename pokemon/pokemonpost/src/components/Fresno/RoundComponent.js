@@ -11,7 +11,15 @@ function RoundComponent(props) {
                 // TODO: get single class name instead of duplicate
                     className={props.roundResult === "T" ? "tie flex basis-full flex basis-full py-3 px-3 rounded gap-4" : "flex basis-full py-3 px-3 rounded gap-4"}
             >
-                <p className='text-2xl font-bold self-center'>{props.roundResult}</p>
+                <p className='text-2xl font-bold self-center'
+                   style={props.roundResult === "W" ? {color: "green"}
+                   :
+                   (props.roundResult === "L" ? {color: "red"}
+                   : {color: "yellow"})}
+                >
+                    
+                    {props.roundResult}
+                </p>
                 <div className="flex justify-between basis-full content-evenly">
                     <div >
                         <p className='text-2xl font-bold'>{props.roundTitle}</p>

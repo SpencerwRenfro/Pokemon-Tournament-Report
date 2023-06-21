@@ -28,23 +28,9 @@ export default function Template() {
     {
       listId: 'listOne',
       id: 'e0',
-      title: 'Salt Lake',
-      country: 'USA.svg',
-      img: 'SaltLake.svg',
-      deckImg: 'MewGenesect.svg',
-      deckTitle: 'Mew Genesect',
-      place: "542",
-      points: 0,
-      list: '',
-      content: 'My first event of the year. Unfortunately I start with a bad run with a bad list, not much else to say about it',
-      dayTwoContent: ''
-    },
-    {
-      listId: 'listTwo',
-      id: 'e1',
       title: 'Peoria, Illinois',
       country: 'USA.svg',
-      img: 'Peoria.svg',
+      img: 'peoria.jpg',
       deckImg: 'MewGenesect.svg',
       deckTitle: 'Mew Genesect',
       place: "50",
@@ -53,25 +39,26 @@ export default function Template() {
       content: 'I had to earn my spot in day two the hard way by defeating a Kyurem VMAX player in an epic game three by OHKOing a giant kyurem VMAX on the last turn of the game with all four Power Tablets and a Choive Belt',
       dayTwoContent: 'I start day two 3-0, and in round thirteen I hit a mirror match. I start and end my turn with a lone Oricorio in the active. THis starts my bad beat and from there I lose out ending with a top 64 finish.'
     },
+    {
+      listId: 'listTwo',
+      id: 'e1',
+      title: 'Salt Lake City, Utah',
+      country: 'USA.svg',
+      img: 'utah.jpg',
+      deckImg: 'MewGenesect.svg',
+      deckTitle: 'Mew Genesect',
+      place: "542",
+      points: 0,
+      list: '',
+      content: 'My first event of the year. Unfortunately I start with a bad run with a bad list, not much else to say about it',
+      dayTwoContent: ''
+    },
 
     {
       id: 'e2',
-      title: 'Alrington Texas',
-      country: 'USA.svg',
-      img: 'Arlington.svg',
-      deckImg: 'LuigaArcheops.svg',
-      deckTitle: 'Luiga Archeops',
-      place: "113",
-      points: 30,
-      list: '',
-      content: "Before Lugia was polished to perfection, I'm on Tord's winning list from LAIC. I didn't have a great run, and honestly I was suppoed to lose round nine and leave without points. At the end of game three my opponent fails an attack with Lumineon V-they don't realize Aurora Energy is missing after announcing Acqua Return. A mistake that ultimately swings the game in my favor",
-      dayTwoContent: ''
-    },
-    {
-      id: 'e3',
       title: 'Toronto, Canada',
       country: 'Canada.svg',
-      img: 'Toronto.svg',
+      img: 'toronto.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "144",
@@ -80,12 +67,25 @@ export default function Template() {
       content: "I start the day 5-0, but end at 6-2-1 because I took an intentional draw against a Mew player in round 9. ",
       dayTwoContent: "Day two was pretty tough for me as the field is flooded with Lugia Decks. I am maybe one of the only players without V Guard Energy or Raikou. Resulting an incredibly difficult mirror match that kept getting paired into. "
     },
+    {
+      id: 'e3',
+      title: 'Arlington, Texas',
+      country: 'USA.svg',
+      img: "arlington.jpg",
+      deckImg: 'LuigaArcheops.svg',
+      deckTitle: 'Luiga Archeops',
+      place: "113",
+      points: 30,
+      list: '',
+      content: "Before Lugia was polished to perfection, I'm on Tord's winning list from LAIC. I didn't have a great run, and honestly I was suppoed to lose round nine and leave without points. At the end of game three my opponent fails an attack with Lumineon V-they don't realize Aurora Energy is missing after announcing Acqua Return. A mistake that ultimately swings the game in my favor",
+      dayTwoContent: ''
+    },
 
     {
       id: 'e4',
       title: 'Orlando, Florida',
       country: 'USA.svg',
-      img: 'Orlando.svg',
+      img: 'orlando.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: '1,185',
@@ -98,7 +98,7 @@ export default function Template() {
       id: 'e5',
       title: 'Knoxville, Tennesse',
       country: 'USA.svg',
-      img: 'Knoxville.svg',
+      img: 'knoxvillle.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "58",
@@ -111,7 +111,7 @@ export default function Template() {
       id: 'e6',
       title: 'Vancouver, Canada',
       country: 'Canada.svg',
-      img: 'Vancouver.svg',
+      img: 'vancouver.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "447",
@@ -124,7 +124,7 @@ export default function Template() {
       id: 'e7',
       title: 'Fort Wayne, Indiana',
       country: 'USA.svg',
-      img: 'FortWayne.svg',
+      img: 'fort-wayne.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "167",
@@ -137,7 +137,7 @@ export default function Template() {
       id: 'e8',
       title: 'EUIC, London',
       country: 'England.svg',
-      img: 'EUIC.svg',
+      img: 'london.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "542",
@@ -150,7 +150,7 @@ export default function Template() {
       id: 'e9',
       title: 'Local Events',
       country: 'USA.svg',
-      img: 'LocalEvents.svg',
+      img: 'locals.jpg',
       deckImg: '',
       deckTitle: '',
       place: '',
@@ -168,7 +168,7 @@ export default function Template() {
       id: 'e10',
       title: 'Portland, Oregon',
       country: 'USA.svg',
-      img: 'Portland.svg',
+      img: 'portland.jpg',
       deckImg: 'Gardevoir.svg',
       deckTitle: 'Gardevoir',
       place: "179",
@@ -181,7 +181,7 @@ export default function Template() {
       id: 'e11',
       title: 'Milwaukee, Wisconsin',
       country: 'USA.svg',
-      img: 'Toronto.svg',
+      img: 'milwuakee.jpg',
       deckImg: 'LuigaArcheops.svg',
       deckTitle: 'Luiga Archeops',
       place: "1,020",
@@ -262,10 +262,10 @@ export default function Template() {
               mewComparison={mewComparison}
               seasonSummary={seasonSummary}
               aboutMeHref={aboutMeHref}
-              saltLakeHref={newDataID[0]}
-              peoriaHref={newDataID[1]}
-              arlingtonHref={newDataID[2]}
-              torontoHref={newDataID[3]}
+              peoriaHref={newDataID[0]}
+              saltLakeHref={newDataID[1]}
+              torontoHref={newDataID[2]}
+              arlingtonHref={newDataID[3]}
               orlandoHref={newDataID[4]}
               knoxvilleHref={newDataID[5]}
               vancouverHref={newDataID[6]}
@@ -309,40 +309,43 @@ export default function Template() {
             Here's a brief recap of my tournament history, deck choices (with lists), and short summary of my runs.
           </p>
         <div>
+
+
+
           <EventItem
           listId={eventSchema[0].listId}
-            saltLakeHref={newDataID[0]}
+            peoriaHref={newDataID[0]}
             id={eventSchema[0].id}
             title={eventSchema[0].title}
+            image={eventSchema[0].img}
             country={eventSchema[0].country}
             points={eventSchema[0].points}
             place={eventSchema[0].place}
             deck={eventSchema[0].deck}
             content={eventSchema[0].content}
             dayTwoContent={eventSchema[0].dayTwoContent}
-            image={eventSchema[0].img}
             deckImg={eventSchema[0].deckImg}
             deckTitle={eventSchema[0].deckTitle}
           />
 
-
-          <EventItem
+<EventItem
           listId={eventSchema[1].listId}
-            peoriaHref={newDataID[1]}
+            saltLakeHref={newDataID[1]}
             id={eventSchema[1].id}
             title={eventSchema[1].title}
-            image={eventSchema[1].img}
             country={eventSchema[1].country}
             points={eventSchema[1].points}
             place={eventSchema[1].place}
             deck={eventSchema[1].deck}
             content={eventSchema[1].content}
             dayTwoContent={eventSchema[1].dayTwoContent}
+            image={eventSchema[1].img}
             deckImg={eventSchema[1].deckImg}
             deckTitle={eventSchema[1].deckTitle}
           />
+
           <EventItem
-            arlingtonHref={newDataID[2]}
+            torontoHref={newDataID[2]}
             id={eventSchema[2].id}
             title={eventSchema[2].title}
             image={eventSchema[2].img}
@@ -356,8 +359,9 @@ export default function Template() {
             deckTitle={eventSchema[2].deckTitle}
           />
 
-          <EventItem
-            torontoHref={newDataID[3]}
+          
+<EventItem
+            arlingtonHref={newDataID[3]}
             id={eventSchema[3].id}
             title={eventSchema[3].title}
             image={eventSchema[3].img}
@@ -481,9 +485,6 @@ export default function Template() {
             deckTitle={eventSchema[11].deckTitle}
           />
 
-          <div>
-            <h1 id="Toronto">Toronto</h1>
-          </div>
         </div>
 
 

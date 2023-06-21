@@ -3,9 +3,10 @@ import { Link} from "react-router-dom";
 
 function EventItem(props) {
 
-    let [anchorID, setAnchorID] = useState(props.id)
 
-    let EventImage = `${process.env.PUBLIC_URL}/images/svgs/${props.image}`;
+  
+    let eventImage = `${process.env.PUBLIC_URL}/images/Convention_Centers/${props.image}`
+   
     let countryImage = `${process.env.PUBLIC_URL}/images/svgs/${props.country}`;
 
     let deckImg = `${process.env.PUBLIC_URL}/images/svgs/${props.deckImg}`
@@ -29,18 +30,18 @@ function EventItem(props) {
         tempID = props.localsEventHref;
        
         console.log(tempID + "\nTHIS IS TEMP ID FOR LOCALS EVENT");
-    } else if(props.title === "Salt Lake"){
+    } else if(props.title === "Peoria, Illinois"){
         tempID = props.saltLakeHref;
         tempListID = props.listId;
         console.log('temp ID' + tempID);
         console.log('listID' + props.listId);
-    } else if(props.title === "Peoria, Illinois"){
+    } else if(props.title === "Salt Lake City, Utah"){
         tempID = props.peoriaHref;
         tempListID = props.listId;
         console.log('temp ID' + tempID);
-    } else if(props.title === 'Arlington, Texas'){
+    } else if(props.title === 'Toronto, Canada'){
         tempID = props.arlingtonHref
-    } else if(props.title ===  'Toronto, Canada'){
+    } else if(props.title ===  'Arlington, Texas'){
         tempID = props.torontoHref;
     } else if(props.title === 'Orlando, Florida') {
         tempID = props.orlandoHref;
@@ -66,7 +67,7 @@ function EventItem(props) {
                 props.title === "Local Events" ?
                 <div id={tempID}>
                     <h1 className="text-3xl font-bold mb-3">{props.title}</h1>
-                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${EventImage})`, backgroundRepeat: 'no-repeat' }}>
+                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>
                     </div>
                     <div className="mb-5">
                         <p>{props.content}</p>
@@ -108,7 +109,7 @@ function EventItem(props) {
                         <h1 className="text-3xl font-bold">{props.title}</h1>
                         <img src={countryImage} style={{ width: '50px', height: '50px' }} alt="event location" />
                     </div>
-                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${EventImage})`, backgroundRepeat: 'no-repeat' }}>                            
+                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>                            
                     </div>
                     <div className="flex row items-center gap-4 pb-5">
                         <div>

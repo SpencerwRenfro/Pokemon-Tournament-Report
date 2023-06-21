@@ -278,11 +278,10 @@ function Fresno(props) {
                     <p className="leading-7 mb-5">My opponent opens Ralts, but then benches two Klefki and retreats to one. I’m in for a long, slow, game. Luckily, I had a Forest Seal Stone in hand to help me get started. Slowly but surely I KO the Klefkis to get setup and eventually win the game.</p>
                     <p className="leading-7 mb-5">Game 2 my opponent opens Ralts and passes. The door is wide open, except my hand is awful, and I struggle to start. Finally time is called and I need to prevent my opponent from making a Sky Seal Stone Play with their benched Zacian V. Digging for a big combo play with only two modifiers in deck feels risky. Plus I'd have to bump Path to the Peak for my opponent to have a chance. I opt to keep my stadium in play and KO their Shining Arcana Gardevoir. My opponent starts the turn with a twinkle in their eye and starts styling on me—they have it all. The game ends with Sky Seal Stone activated to OHKO my Mew VMax. Tie.</p>
                     <p className="leading-7 mb-5">While I’m waiting to sign the match slip my opponent is holding hostage, they also do me the favor of gleefully explaining the play-by-play of what had happened on the last turn of the game—incase I missed it the first time. After watching them happily circle TIE, I grab my things and walk over to sign my drop slip. I’m not going to Yokohoma, I did not earn my invite to the 2023 World Championships.</p>
-                    <div className="card    my-10 flex items-center mx-20" sytle={{ width: "auto", border: "solid 2px green" }}>
-                        <div className="flex gap-4">
+                    <div className="MB-10">
+                        <div className="flex row items-center justify-start gap-4 mb-3">
                             <h1 className="text-3xl font-bold">Worlds Invite-Final Standing</h1>
                             <img src={japanFlag} style={{ width: '50px', height: '50px' }} alt="event location" />
-
                         </div>
                         <figure>
                             <img className="px-4" src={japanEvent} alt="" />
