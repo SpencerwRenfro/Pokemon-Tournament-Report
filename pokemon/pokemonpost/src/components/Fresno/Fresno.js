@@ -17,8 +17,8 @@ function Fresno(props) {
             roundCount: 1,
             roundResult: "W",
             roundTitle: "Ricardo Gonzalez",
-            deckTitle: "Arceus/DUraladon/Alolan Vulpix",
-            deckImg: ["arceus.png", "duraludon-gmax.png", "vulpix-alola.png"]
+            deckTitle: "Arceus/Duraladon/Alolan Vulpix",
+            deckImg: "roundOne.svg"
         },
         {
             id: 2,
