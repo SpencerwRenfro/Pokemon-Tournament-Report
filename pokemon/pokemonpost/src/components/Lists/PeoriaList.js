@@ -10,8 +10,8 @@ function ListOne() {
   let USA = `${process.env.PUBLIC_URL}/images/Location_Flags/united-states.svg`;
 
   return (
-    <div className="container mx-auto px-8">
-      <div className='flex flex-row mt-10'>
+    <div className=" container mx-auto px-8 ">
+      <div className=' flex flex-row mt-10'>
         <a href="/" className='pr-3' style={{color: "#90CAF9"}}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
@@ -41,6 +41,8 @@ function ListOne() {
         </div>
       </div>
 
+<div className='grid grid-cols-12'>
+  <div className='col-span-5 md:col-span-8 xl:col-span-12'>
       <div className="table border-separate rounded mb-10 pb-5" style={{ border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
         <thead>
           <tr>
@@ -84,6 +86,8 @@ function ListOne() {
             </td>
           </tr>
         </tbody>
+      </div>
+      </div>
       </div>
     </div>
   )

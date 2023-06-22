@@ -11,7 +11,7 @@ function MewComparison(props) {
             <h5 className="text-xl mb-5 font-bold">3rd - Andrew Hedrick</h5>            
             <div className="table border-separate rounded mb-10 pb-5" style={{ border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                 <thead>
-                    <tr>
+                    <tr className='text-white'>
                         <th className="px-10">Pokémon (11)</th>
                         <th className="px-10">Trainer (45)</th>
                         <th className="px-10">Energy (4)</th>
@@ -54,7 +54,7 @@ function MewComparison(props) {
             <h5 className="text-xl mb-5 font-bold">8th - Le Bui</h5>            
             <div className="table border-separate rounded mb-10 pb-5" style={{ border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                 <thead>
-                    <tr>
+                    <tr className='text-white'>
                         <th className="px-10">Pokémon (11)</th>
                         <th className="px-10">Trainer (45)</th>
                         <th className="px-10">Energy (4)</th>
@@ -97,7 +97,7 @@ function MewComparison(props) {
             <h5 className="text-xl mb-5 font-bold">88th - Tyler Renfro (Tord's Mew)</h5>            
             <div className="table border-separate rounded mb-10 pb-5" style={{ border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                 <thead>
-                    <tr>
+                    <tr className='text-white'>
                         <th className="px-10">Pokémon (11)</th>
                         <th className="px-10">Trainer (45)</th>
                         <th className="px-10">Energy (4)</th>

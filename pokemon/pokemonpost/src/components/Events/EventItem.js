@@ -8,16 +8,15 @@ function EventItem(props) {
     let eventImage = `${process.env.PUBLIC_URL}/images/Convention_Centers/${props.image}`
     let locationFlag = `${process.env.PUBLIC_URL}/images/Location_Flags/${props.country}`
    
-    let countryImage = `${process.env.PUBLIC_URL}/images/svgs/${props.country}`;
 
     let deckImg = `${process.env.PUBLIC_URL}/images/svgs/${props.deckImg}`
-    let listImg = `${process.env.PUBLIC_URL}/images/svgs/list.svg`
+    
 
     let multiDeckImg1;
     let multiDeckImg2;
     let multiDeckImg3;
 
-    let event1;
+  
     
 
     let tempID;
@@ -73,7 +72,7 @@ function EventItem(props) {
                     </div>
                     <table className="table table-auto w-full mb-10">
                         <thead>
-                            <tr>
+                            <tr className='text-white'>
                                 <th>Deck</th>
                                 <th>Event</th>
                                 <th>Place</th>
@@ -108,7 +107,7 @@ function EventItem(props) {
                         <h1 className="text-3xl font-bold">{props.title}</h1>
                         <img className="rounded" src={locationFlag} style={{ width: '35px'}} alt="event location" />
                     </div>
-                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>                            
+                    <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: "350px", backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>                            
                     </div>
                     <div className="flex row items-center gap-4 pb-5">
                         <div>
@@ -116,17 +115,17 @@ function EventItem(props) {
                         </div>
                         <h3 className="text-2xl font-bold">{props.deckTitle}</h3>
                     </div>
-                    <div className="grid grid-cols-3 stats py-2 mb-5" style={{  backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
+                    <div className="grid grid-cols-3 stats py-2 mb-5" style={{backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                         <div className="stat">
-                            <p className="uppercase tracking-wider text-center text-xs mb-1">Place</p>
-                            <p className="uppercase tracking-wider text-center font-bold text-2xl">{props.place}</p>
+                            <p className="uppercase tracking-wider text-center text-xs mb-1 text-white">Place</p>
+                            <p className="uppercase tracking-wider text-center font-bold text-2xl text-white">{props.place}</p>
                         </div>
                         <div className="stat">                            
-                            <p className="uppercase tracking-wider text-center text-xs mb-1">Points</p>
-                            <p className="text-center font-bold text-center text-2xl">+{props.points}</p>
+                            <p className="uppercase tracking-wider text-center text-xs mb-1 text-white">Points</p>
+                            <p className="font-bold text-center text-2xl text-white">+{props.points}</p>
                         </div>
                         <div className="stat">
-                            <div className="uppercase tracking-wider text-center text-xs mb-1" style={{ width: "auto" }}>List</div>
+                            <div className="uppercase tracking-wider text-center text-xs mb-1 text-white" style={{ width: "auto" }}>List</div>
                             <Link target="_blank"rel="noopener noreferrer" to={`/${props.listId}`}>
                                 <div className='flex justify-center'>
                                 <button className="btn btn-ghost">

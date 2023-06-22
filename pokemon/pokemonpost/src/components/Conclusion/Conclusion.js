@@ -21,11 +21,11 @@ function Conclusion(props) {
         <img className="w-full" src={tyler} alt="tyler walking at airport" />
       </div>
       <div className='flex justify-center pt-32'>
-      <Link target="_blank" rel="noopener noreferrer" to="/bonus">
+      {/* <Link target="_blank" rel="noopener noreferrer" to="/bonus">
         <div>
           <img src={bonusLink} alt="link" />
         </div>
-      </Link>
+      </Link> */}
       </div>
     </div>
   )

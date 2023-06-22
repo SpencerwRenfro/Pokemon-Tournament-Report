@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 function RoundComponent(props) {
 
-    let mql = window.matchMedia("(max-width: 600px)");
+  
 
 
     // pokemon images
@@ -113,12 +113,13 @@ function RoundComponent(props) {
         tempWidth1 = '29px';
         tempWidth2 = '26px';
         tempWidth3 = '41px';
+    
 
     } 
 
 
     return (
-        <div className="grid-rows-2 flex flex-row gap-8 mb-5">
+        <div className="grid-rows-2 flex flex-row md:gap-8 mb-5">
             <p className='roundFonts self-center text-center font-bold text-2xl'>{props.roundId}</p>
             <div style={props.roundResult === "W" ? { background: "rgb(2 44 34)" } : (props.roundResult === "T" ?
                 { backgroundColor: "#191106" } : {
@@ -138,19 +139,21 @@ function RoundComponent(props) {
                 </p>
                 <div className="flex justify-between basis-full content-evenly">
                     <div >
-                        <p className={`text-2xl font-bold`}>{props.roundTitle}</p>
-                        <p className="text-xs">{props.deckTitle}</p>
+                        <p className={`md:text-2xl font-bold`}>{props.roundTitle}</p>
+                        <p className="text-xs"></p>
                     </div>
                     <div className="flex items-center">
                         {/* <img src={`${process.env.PUBLIC_URL}images/Rounds/${props.deckImg}`}/> */}
                         <img style={{ width: `${tempWidth1}` }} src={tempImg1} alt="pokemon type" />
                         <img style={{ width: `${tempWidth2}` }} src={tempImg2} alt="pokemon type" />
-                          <img style={{ width: `${tempWidth3}` }} src={tempImg3} alt="pokemon type"/>
-                        {/* <img style={{width: `${tempWidth3}`}} src={tempImg3} alt="pokemon type"/>  */}
+                        {
+                            tempImg3 ? 
+                             <img style={{ width: `${tempWidth3}` }} src={tempImg3} alt="pokemon type"/>
+                             : ""
+                        }
+
                     </div>
                 </div>
-
-
             </div>
         </div >
     )

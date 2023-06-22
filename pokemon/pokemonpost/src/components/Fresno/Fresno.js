@@ -127,7 +127,7 @@ function Fresno(props) {
                     <p className="leading-7 mb-5">Leading up to the event, Fresno was my last chance qualifier for Worlds. I didn't get into NAIC due to the mishandling of registration, despite being exactly on time for waves two and three, but I digress. I wanted to play something fun, but also something I could confidently finish a best-of-three. I decided on Mew as it reminded me fondly of the first deck I ever played in tournaments—Nightmarch.</p>
                     <p className="leading-7 mb-5">To prepare for the event, I booked a coaching session with Tord Reklev. I get on the call with Tord and he asks me about deck choice, and I tell him I'm set on Mew. He takes a list from Milwuakee and covers sequencing while challenging me on opening hand scenarios—it’s perfect. He's a great coach and I wish I did more sessions with him earlier this season.</p>
                     <p className="leading-7 mb-5">My biggest take away from the session was to not be a greedy Mew player with Cram-o-matics and to always go with the sure thing. At the end he tells me the changes he would make along with the reasoning for why. The base list was Michael Long's (congrats on getting unbanned) and Tord made these suggestions:</p>
-                    <div className="py-5 pl-10 mb-10 card bg-base-100 rounded">
+                    <div className="py-5 pl-10 mb-10 card bg-base-100 rounded" style={{backgroundColor: "#1D232A"}}>
                         <p className="italic mb-3">-2 Nest Ball, -1 Penny, -1 Escape Rope, -1 Choice Belt, </p>
                         <p className="italic">+3 Feather Ball, +1 Forest Seal Stone, +1 Cleansing Gloves</p>
                     </div>
@@ -286,10 +286,10 @@ function Fresno(props) {
                 <div className="mb-20">
                     <div className="flex row items-center justify-start gap-4 mb-3">
                         <h1 className="text-3xl font-bold">Worlds Invite, Final Standing</h1>
-                        <img src={japanFlag} style={{ width: '50px', height: '50px' }} alt="event location" />
+                        <img src={japanFlag} style={{  height: '35px' }} alt="event location" />
                     </div>
                     <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${japanEvent})`, backgroundRepeat: 'no-repeat', }}></div>
-                    <div className="grid grid-cols-2 stats py-2 mb-5" style={{ backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
+                    <div className="grid grid-cols-2 stats py-2 mb-5 text-white" style={{ backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                         <div className="stat">
                             <p className="uppercase tracking-wider text-center text-xs mb-1">Point Total</p>
                             <p className="uppercase tracking-wider text-center font-bold text-2xl">320/350</p>

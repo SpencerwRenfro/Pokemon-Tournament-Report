@@ -10,12 +10,10 @@ import MewComparison from './components/MewComparison/MewComparison';
 import Slops from './components/Props&Slops/Slops';
 import Conclusion from './components/Conclusion/Conclusion';
 
-// css
-import "./components/CSS/fonts.css"
+
 
 // react-router
-import { Route, Routes } from "react-router-dom";
-import { Link, NavLink, Outlet } from "react-router-dom";
+
 
 
 import "./App.css"
@@ -212,19 +210,14 @@ export default function Template() {
   let slops = "slops";
   let conclusion = "conclusion";
 
-  // links
-  let charizardLounge = 'The glory days of sites like The Charizard Lounge';
-
-
-
 
 
 
   return (
     <div className="container mx-auto px-8 text-white">
-      <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">
+      <div className="grid grid-cols-12 mt-10   gap-4">
         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
-          <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
+          <p className='date uppercase tracking-wider my-5'>Jun 14, 2023</p>
           <h1 className="text-5xl title pb-1 white font-bold">
             Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
@@ -243,14 +236,19 @@ export default function Template() {
           </p>
           <p className="my-5 leading-7">
             With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
-            today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like <a href="#" className="link">The Charizard Lounge</a> and <a href="#" className='link'>Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
+            today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like
+            <span> </span>
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>The Charizard Lounge</a> and 
+            <span> </span>
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
           </p>
+          
 
           <p className="leading-7">
             So sit back, relax, and enjoy an article that attempts to pay homage  to the the legacy content of the greats.
-            The days before players had access to all the top 8 lists from <span className='link'>limitless.</span> Before
+            The days before players had access to all the top 8 lists from <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>limitless.</a> Before
             <span> </span>
-            <span className='link'>pokestats.live</span> leaked your deck to
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>pokestats.live</a> leaked your deck to
             your next round opponent.
           </p>
           <div className='py-10 regular'>
@@ -491,34 +489,20 @@ export default function Template() {
           </div>
 
 
-          <Fresno
+           <Fresno
             weekBefore={weekBefore}
             fresnoDay1={fresnoDay1}
             fresnoDay2={fresnoDay2}
-          />
-          <MewComparison
+          /> 
+           <MewComparison
             mewComparison={mewComparison}
-          />
+          /> 
           <Slops
             slops={slops}
           />
           <Conclusion
             conclusion={conclusion}
           />
-
-          {/* <li className="col-span-4">
-          <Link className="btn-ghost" target="_blank" rel="noopener noreferrer" to="/bonus">
-            Projects Page
-          </Link>
-        </li>
-
-        <Link target="_blank" rel="noopener noreferrer" to="/bonus">
-          <div>
-            <img src={bonusLink} alt="link"/>
-          </div>
-        </Link> */}
-
-
 
         </div>
 
@@ -527,7 +511,7 @@ export default function Template() {
 
 
 
-        {/* <Template /> */}
+
 
 
 
