@@ -119,7 +119,7 @@ function RoundComponent(props) {
 
 
     return (
-        <div className="grid-rows-2 flex flex-row md:gap-8 mb-5">
+        <div className="md:grid-rows-2 flex flex-row md:gap-8 mb-5">
             <p className='roundFonts self-center text-center font-bold text-2xl'>{props.roundId}</p>
             <div style={props.roundResult === "W" ? { background: "rgb(2 44 34)" } : (props.roundResult === "T" ?
                 { backgroundColor: "#191106" } : {
@@ -137,10 +137,10 @@ function RoundComponent(props) {
 
                     {props.roundResult}
                 </p>
-                <div className="flex justify-between basis-full content-evenly">
-                    <div >
+                <div className="flex flex-wrap justify-between basis-full content-evenly">
+                    <div>
                         <p className={`md:text-2xl font-bold`}>{props.roundTitle}</p>
-                        <p className="text-xs"></p>
+                        <p className="text-xs ld:text-md">{props.deckTitle}</p>
                     </div>
                     <div className="flex items-center">
                         {/* <img src={`${process.env.PUBLIC_URL}images/Rounds/${props.deckImg}`}/> */}
