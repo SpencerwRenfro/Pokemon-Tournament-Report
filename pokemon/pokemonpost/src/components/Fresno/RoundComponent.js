@@ -120,15 +120,15 @@ function RoundComponent(props) {
 
     return (
         <div className="md:grid-rows-2 flex flex-row md:gap-8 mb-5">
-            <p className='roundFonts self-center text-center font-bold text-2xl'>{props.roundId}</p>
+            <p className=' self-center text-center font-bold text-2xl'>{props.roundId}</p>
             <div style={props.roundResult === "W" ? { background: "rgb(2 44 34)" } : (props.roundResult === "T" ?
                 { backgroundColor: "#191106" } : {
                     background: "#020101"
                 })}
                 // TODO: get single class name instead of duplicate
-                className={props.roundResult === "T" ? "tie flex basis-full py-3 px-3 rounded gap-4" : "flex basis-full py-3 px-3 rounded gap-4"}
+                className={props.roundResult === "T" ? "tie flex basis-full py-3 mx-3 rounded gap-4 px-3 mx-3" : "flex basis-full py-3 px-3 mx-3 rounded gap-4"}
             >
-                <p className='text-2xl font-bold self-center'
+                <p className='text-xl md:text-2xl font-bold self-center'
                     style={props.roundResult === "W" ? { color: "#66BB6A" }
                         :
                         (props.roundResult === "L" ? { color: "#F44336" }
