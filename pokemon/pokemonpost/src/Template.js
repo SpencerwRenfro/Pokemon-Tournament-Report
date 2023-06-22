@@ -221,7 +221,7 @@ export default function Template() {
 
 
   return (
-    <div className="container mx-auto px-8">
+    <div className="container mx-auto px-8 text-white">
       <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">
         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
           <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
@@ -362,7 +362,8 @@ export default function Template() {
 
 
             <EventItem
-              listId={eventSchema[3].listId}
+              listId={eventSchema[3].listId
+              }
               arlingtonHref={newDataID[3]}
               id={eventSchema[3].id}
               title={eventSchema[3].title}

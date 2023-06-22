@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 
 function RoundComponent(props) {
 
+    let mql = window.matchMedia("(max-width: 600px)");
+
 
     // pokemon images
     let arceus = `${process.env.PUBLIC_URL}/images/Pokemon_Sprites/arceus.png`;
@@ -123,7 +125,7 @@ function RoundComponent(props) {
                     background: "#020101"
                 })}
                 // TODO: get single class name instead of duplicate
-                className={props.roundResult === "T" ? "tie flex basis-full flex basis-full py-3 px-3 rounded gap-4" : "flex basis-full py-3 px-3 rounded gap-4"}
+                className={props.roundResult === "T" ? "tie flex basis-full py-3 px-3 rounded gap-4" : "flex basis-full py-3 px-3 rounded gap-4"}
             >
                 <p className='text-2xl font-bold self-center'
                     style={props.roundResult === "W" ? { color: "#66BB6A" }
@@ -136,14 +138,14 @@ function RoundComponent(props) {
                 </p>
                 <div className="flex justify-between basis-full content-evenly">
                     <div >
-                        <p className='text-2xl font-bold'>{props.roundTitle}</p>
+                        <p className={`text-2xl font-bold`}>{props.roundTitle}</p>
                         <p className="text-xs">{props.deckTitle}</p>
                     </div>
                     <div className="flex items-center">
                         {/* <img src={`${process.env.PUBLIC_URL}images/Rounds/${props.deckImg}`}/> */}
                         <img style={{ width: `${tempWidth1}` }} src={tempImg1} alt="pokemon type" />
                         <img style={{ width: `${tempWidth2}` }} src={tempImg2} alt="pokemon type" />
-                          <img style={{ width: `${tempWidth3}` }} src={tempImg3} />
+                          <img style={{ width: `${tempWidth3}` }} src={tempImg3} alt="pokemon type"/>
                         {/* <img style={{width: `${tempWidth3}`}} src={tempImg3} alt="pokemon type"/>  */}
                     </div>
                 </div>
