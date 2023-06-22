@@ -27,19 +27,15 @@ function EventItem(props) {
         multiDeckImg1 = `${process.env.PUBLIC_URL}/images/svgs/${props.multiDeckImg[0]}`;
         multiDeckImg2 = `${process.env.PUBLIC_URL}/images/svgs/${props.multiDeckImg[1]}`;
         multiDeckImg3 = `${process.env.PUBLIC_URL}/images/svgs/${props.multiDeckImg[2]}`;
-        // tempID = props.href;
         tempID = props.localsEventHref;
        
-        console.log(tempID + "\nTHIS IS TEMP ID FOR LOCALS EVENT");
     } else if(props.title === "Peoria, Illinois"){
         tempID = props.peoriaHref;
         tempListID = props.listId;
-        console.log('temp ID' + tempID);
-        console.log('listID' + props.listId);
     } else if(props.title === "Salt Lake City, Utah"){
         tempID = props.saltLakeHref;
         tempListID = props.listId;
-        console.log('temp ID' + tempID);
+       
     } else if(props.title === 'Toronto, Canada'){
         tempID = props.torontoHref
     } else if(props.title ===  'Arlington, Texas'){
@@ -55,7 +51,6 @@ function EventItem(props) {
         tempID = props.fortWayneHref;
     } else if(props.title === 'EUIC, London') {
         tempID = props.londonHref;
-        console.log('LONDON HREF_________' + tempID);
     } else if(props.title === 'Portland, Oregon') {
         tempID = props.portlandHref;
     } else if(props.title === 'Milwaukee, Wisconsin') {

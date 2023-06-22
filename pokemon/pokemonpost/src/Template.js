@@ -26,7 +26,7 @@ export default function Template() {
 
   const eventSchema = [
     {
-      listId: 'listOne',
+      listId: 'PeoriaList',
       id: 'e0',
       title: 'Peoria, Illinois',
       country: 'united-states.svg',
@@ -40,7 +40,7 @@ export default function Template() {
       dayTwoContent: 'I start day two 3-0, and in round thirteen I hit a mirror match. I start and end my turn with a lone Oricorio in the active. THis starts my bad beat and from there I lose out ending with a top 64 finish.'
     },
     {
-      listId: 'listTwo',
+      listId: 'UtahList',
       id: 'e1',
       title: 'Salt Lake City, Utah',
       country: 'united-states.svg',
@@ -69,6 +69,7 @@ export default function Template() {
     },
     {
       id: 'e3',
+      listId: 'ArlingtonList',
       title: 'Arlington, Texas',
       country: 'united-states.svg',
       img: "arlington.jpg",
@@ -221,11 +222,11 @@ export default function Template() {
 
   return (
     <div className="container mx-auto px-8">
-    <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">   
-         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
+      <div className="grid grid-cols-12 mt-10 nonWhite spacing gap-4">
+        <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
           <p className='date nonWhite uppercase tracking-wider my-5'>Jun 14, 2023</p>
           <h1 className="text-5xl title pb-1 white font-bold">
-          Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
+            Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
           <div className="flex mt-5 mb-20">
             <img width="40" height="40" className="mr-3" src={headshot} alt="headshot" />
@@ -237,8 +238,8 @@ export default function Template() {
           <p className="leading-7">
             <strong>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
               end of the BST-SVI format.</strong> I decided
-              to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
-              community. I wanted to make something that's becomming a bit of a lost art, something classic—a tournament report.
+            to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
+            community. I wanted to make something that's becomming a bit of a lost art, something classic—a tournament report.
           </p>
           <p className="my-5 leading-7">
             With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
@@ -308,202 +309,203 @@ export default function Template() {
             My strategy for deck choice was what I believed to be the strongest deck in format combined with what I could pilot the best.
             Here's a brief recap of my tournament history, deck choices (with lists), and short summary of my runs.
           </p>
-        <div>
+          <div>
 
 
 
-          <EventItem
-          listId={eventSchema[0].listId}
-            peoriaHref={newDataID[0]}
-            id={eventSchema[0].id}
-            title={eventSchema[0].title}
-            image={eventSchema[0].img}
-            country={eventSchema[0].country}
-            points={eventSchema[0].points}
-            place={eventSchema[0].place}
-            deck={eventSchema[0].deck}
-            content={eventSchema[0].content}
-            dayTwoContent={eventSchema[0].dayTwoContent}
-            deckImg={eventSchema[0].deckImg}
-            deckTitle={eventSchema[0].deckTitle}
-          />
+            <EventItem
+              listId={eventSchema[0].listId}
+              peoriaHref={newDataID[0]}
+              id={eventSchema[0].id}
+              title={eventSchema[0].title}
+              image={eventSchema[0].img}
+              country={eventSchema[0].country}
+              points={eventSchema[0].points}
+              place={eventSchema[0].place}
+              deck={eventSchema[0].deck}
+              content={eventSchema[0].content}
+              dayTwoContent={eventSchema[0].dayTwoContent}
+              deckImg={eventSchema[0].deckImg}
+              deckTitle={eventSchema[0].deckTitle}
+            />
 
-<EventItem
-          listId={eventSchema[1].listId}
-            saltLakeHref={newDataID[1]}
-            id={eventSchema[1].id}
-            title={eventSchema[1].title}
-            country={eventSchema[1].country}
-            points={eventSchema[1].points}
-            place={eventSchema[1].place}
-            deck={eventSchema[1].deck}
-            content={eventSchema[1].content}
-            dayTwoContent={eventSchema[1].dayTwoContent}
-            image={eventSchema[1].img}
-            deckImg={eventSchema[1].deckImg}
-            deckTitle={eventSchema[1].deckTitle}
-          />
+            <EventItem
+              listId={eventSchema[1].listId}
+              saltLakeHref={newDataID[1]}
+              id={eventSchema[1].id}
+              title={eventSchema[1].title}
+              country={eventSchema[1].country}
+              points={eventSchema[1].points}
+              place={eventSchema[1].place}
+              deck={eventSchema[1].deck}
+              content={eventSchema[1].content}
+              dayTwoContent={eventSchema[1].dayTwoContent}
+              image={eventSchema[1].img}
+              deckImg={eventSchema[1].deckImg}
+              deckTitle={eventSchema[1].deckTitle}
+            />
 
-          <EventItem
-            torontoHref={newDataID[2]}
-            id={eventSchema[2].id}
-            title={eventSchema[2].title}
-            image={eventSchema[2].img}
-            country={eventSchema[2].country}
-            points={eventSchema[2].points}
-            place={eventSchema[2].place}
-            deck={eventSchema[2].deck}
-            content={eventSchema[2].content}
-            dayTwoContent={eventSchema[2].dayTwoContent}
-            deckImg={eventSchema[2].deckImg}
-            deckTitle={eventSchema[2].deckTitle}
-          />
-
-          
-          <EventItem
-            arlingtonHref={newDataID[3]}
-            id={eventSchema[3].id}
-            title={eventSchema[3].title}
-            image={eventSchema[3].img}
-            country={eventSchema[3].country}
-            points={eventSchema[3].points}
-            place={eventSchema[3].place}
-            deck={eventSchema[3].deck}
-            content={eventSchema[3].content}
-            dayTwoContent={eventSchema[3].dayTwoContent}
-            deckImg={eventSchema[3].deckImg}
-            deckTitle={eventSchema[3].deckTitle}
-          />
-          <EventItem
-            orlandoHref={newDataID[4]}
-            title={eventSchema[4].title}
-            image={eventSchema[4].img}
-            country={eventSchema[4].country}
-            points={eventSchema[4].points}
-            place={eventSchema[4].place}
-            deck={eventSchema[4].deck}
-            content={eventSchema[4].content}
-            dayTwoContent={eventSchema[4].dayTwoContent}
-            deckImg={eventSchema[4].deckImg}
-            deckTitle={eventSchema[4].deckTitle}
-          />
-          <EventItem
-            knoxvilleHref={newDataID[5]}
-            title={eventSchema[5].title}
-            image={eventSchema[5].img}
-            country={eventSchema[5].country}
-            points={eventSchema[5].points}
-            place={eventSchema[5].place}
-            deck={eventSchema[5].deck}
-            content={eventSchema[5].content}
-            dayTwoContent={eventSchema[5].dayTwoContent}
-            deckImg={eventSchema[5].deckImg}
-            deckTitle={eventSchema[5].deckTitle}
-          />
-          <EventItem
-            vancouverHref={newDataID[6]}
-            title={eventSchema[6].title}
-            image={eventSchema[6].img}
-            country={eventSchema[6].country}
-            points={eventSchema[6].points}
-            place={eventSchema[6].place}
-            deck={eventSchema[6].deck}
-            content={eventSchema[6].content}
-            dayTwoContent={eventSchema[6].dayTwoContent}
-            deckImg={eventSchema[6].deckImg}
-            deckTitle={eventSchema[6].deckTitle}
-          />
-          <EventItem
-            fortWayneHref={newDataID[7]}
-            title={eventSchema[7].title}
-            image={eventSchema[7].img}
-            country={eventSchema[7].country}
-            points={eventSchema[7].points}
-            place={eventSchema[7].place}
-            deck={eventSchema[7].deck}
-            content={eventSchema[7].content}
-            dayTwoContent={eventSchema[7].dayTwoContent}
-            deckImg={eventSchema[7].deckImg}
-            deckTitle={eventSchema[7].deckTitle}
-          />
-          <EventItem
-            londonHref={newDataID[8]}
-            title={eventSchema[8].title}
-            image={eventSchema[8].img}
-            country={eventSchema[8].country}
-            points={eventSchema[8].points}
-            place={eventSchema[8].place}
-            deck={eventSchema[8].deck}
-            content={eventSchema[8].content}
-            dayTwoContent={eventSchema[8].dayTwoContent}
-            deckImg={eventSchema[8].deckImg}
-            deckTitle={eventSchema[8].deckTitle}
-          />
-          <EventItem
-            HREF={newDataID[9]}
-            localsEventHref={newDataID[9]}
-            title={eventSchema[9].title}
-            image={eventSchema[9].img}
-            country={eventSchema[9].country}
-            points={eventSchema[9].points}
-            place={eventSchema[9].place}
-            deck={eventSchema[9].deck}
-            content={eventSchema[9].content}
-            dayTwoContent={eventSchema[9].dayTwoContent}
-            deckImg={eventSchema[9].deckImg}
-            deckTitle={eventSchema[9].deckTitle}
-            localEventType={eventSchema[9].localEventType}
-            multiPlace={eventSchema[9].multiPlace}
-            multiPoints={eventSchema[9].multiPoints}
-            multiDeckImg={eventSchema[9].multiDeckImg}
-            href={newDataID[9]}
-          />
-          <EventItem
-            portlandHref={newDataID[10]}
-            title={eventSchema[10].title}
-            image={eventSchema[10].img}
-            country={eventSchema[10].country}
-            points={eventSchema[10].points}
-            place={eventSchema[10].place}
-            deck={eventSchema[10].deck}
-            content={eventSchema[10].content}
-            dayTwoContent={eventSchema[10].dayTwoContent}
-            deckImg={eventSchema[10].deckImg}
-            deckTitle={eventSchema[10].deckTitle}
-          />
-          <EventItem
-            milwaukeeHref={newDataID[11]}
-            title={eventSchema[11].title}
-            image={eventSchema[11].img}
-            country={eventSchema[11].country}
-            points={eventSchema[11].points}
-            place={eventSchema[11].place}
-            deck={eventSchema[11].deck}
-            content={eventSchema[11].content}
-            dayTwoContent={eventSchema[11].dayTwoContent}
-            deckImg={eventSchema[11].deckImg}
-            deckTitle={eventSchema[11].deckTitle}
-          />
-
-        </div>
+            <EventItem
+              torontoHref={newDataID[2]}
+              id={eventSchema[2].id}
+              title={eventSchema[2].title}
+              image={eventSchema[2].img}
+              country={eventSchema[2].country}
+              points={eventSchema[2].points}
+              place={eventSchema[2].place}
+              deck={eventSchema[2].deck}
+              content={eventSchema[2].content}
+              dayTwoContent={eventSchema[2].dayTwoContent}
+              deckImg={eventSchema[2].deckImg}
+              deckTitle={eventSchema[2].deckTitle}
+            />
 
 
-        <Fresno
-          weekBefore={weekBefore}
-          fresnoDay1={fresnoDay1}
-          fresnoDay2={fresnoDay2}
-        />
-        <MewComparison
-          mewComparison={mewComparison}
-        />
-        <Slops
-          slops={slops}
-        />
-        <Conclusion
-          conclusion={conclusion}
-        />
+            <EventItem
+              listId={eventSchema[3].listId}
+              arlingtonHref={newDataID[3]}
+              id={eventSchema[3].id}
+              title={eventSchema[3].title}
+              image={eventSchema[3].img}
+              country={eventSchema[3].country}
+              points={eventSchema[3].points}
+              place={eventSchema[3].place}
+              deck={eventSchema[3].deck}
+              content={eventSchema[3].content}
+              dayTwoContent={eventSchema[3].dayTwoContent}
+              deckImg={eventSchema[3].deckImg}
+              deckTitle={eventSchema[3].deckTitle}
+            />
+            <EventItem
+              orlandoHref={newDataID[4]}
+              title={eventSchema[4].title}
+              image={eventSchema[4].img}
+              country={eventSchema[4].country}
+              points={eventSchema[4].points}
+              place={eventSchema[4].place}
+              deck={eventSchema[4].deck}
+              content={eventSchema[4].content}
+              dayTwoContent={eventSchema[4].dayTwoContent}
+              deckImg={eventSchema[4].deckImg}
+              deckTitle={eventSchema[4].deckTitle}
+            />
+            <EventItem
+              knoxvilleHref={newDataID[5]}
+              title={eventSchema[5].title}
+              image={eventSchema[5].img}
+              country={eventSchema[5].country}
+              points={eventSchema[5].points}
+              place={eventSchema[5].place}
+              deck={eventSchema[5].deck}
+              content={eventSchema[5].content}
+              dayTwoContent={eventSchema[5].dayTwoContent}
+              deckImg={eventSchema[5].deckImg}
+              deckTitle={eventSchema[5].deckTitle}
+            />
+            <EventItem
+              vancouverHref={newDataID[6]}
+              title={eventSchema[6].title}
+              image={eventSchema[6].img}
+              country={eventSchema[6].country}
+              points={eventSchema[6].points}
+              place={eventSchema[6].place}
+              deck={eventSchema[6].deck}
+              content={eventSchema[6].content}
+              dayTwoContent={eventSchema[6].dayTwoContent}
+              deckImg={eventSchema[6].deckImg}
+              deckTitle={eventSchema[6].deckTitle}
+            />
+            <EventItem
+              fortWayneHref={newDataID[7]}
+              title={eventSchema[7].title}
+              image={eventSchema[7].img}
+              country={eventSchema[7].country}
+              points={eventSchema[7].points}
+              place={eventSchema[7].place}
+              deck={eventSchema[7].deck}
+              content={eventSchema[7].content}
+              dayTwoContent={eventSchema[7].dayTwoContent}
+              deckImg={eventSchema[7].deckImg}
+              deckTitle={eventSchema[7].deckTitle}
+            />
+            <EventItem
+              londonHref={newDataID[8]}
+              title={eventSchema[8].title}
+              image={eventSchema[8].img}
+              country={eventSchema[8].country}
+              points={eventSchema[8].points}
+              place={eventSchema[8].place}
+              deck={eventSchema[8].deck}
+              content={eventSchema[8].content}
+              dayTwoContent={eventSchema[8].dayTwoContent}
+              deckImg={eventSchema[8].deckImg}
+              deckTitle={eventSchema[8].deckTitle}
+            />
+            <EventItem
+              HREF={newDataID[9]}
+              localsEventHref={newDataID[9]}
+              title={eventSchema[9].title}
+              image={eventSchema[9].img}
+              country={eventSchema[9].country}
+              points={eventSchema[9].points}
+              place={eventSchema[9].place}
+              deck={eventSchema[9].deck}
+              content={eventSchema[9].content}
+              dayTwoContent={eventSchema[9].dayTwoContent}
+              deckImg={eventSchema[9].deckImg}
+              deckTitle={eventSchema[9].deckTitle}
+              localEventType={eventSchema[9].localEventType}
+              multiPlace={eventSchema[9].multiPlace}
+              multiPoints={eventSchema[9].multiPoints}
+              multiDeckImg={eventSchema[9].multiDeckImg}
+              href={newDataID[9]}
+            />
+            <EventItem
+              portlandHref={newDataID[10]}
+              title={eventSchema[10].title}
+              image={eventSchema[10].img}
+              country={eventSchema[10].country}
+              points={eventSchema[10].points}
+              place={eventSchema[10].place}
+              deck={eventSchema[10].deck}
+              content={eventSchema[10].content}
+              dayTwoContent={eventSchema[10].dayTwoContent}
+              deckImg={eventSchema[10].deckImg}
+              deckTitle={eventSchema[10].deckTitle}
+            />
+            <EventItem
+              milwaukeeHref={newDataID[11]}
+              title={eventSchema[11].title}
+              image={eventSchema[11].img}
+              country={eventSchema[11].country}
+              points={eventSchema[11].points}
+              place={eventSchema[11].place}
+              deck={eventSchema[11].deck}
+              content={eventSchema[11].content}
+              dayTwoContent={eventSchema[11].dayTwoContent}
+              deckImg={eventSchema[11].deckImg}
+              deckTitle={eventSchema[11].deckTitle}
+            />
 
-        {/* <li className="col-span-4">
+          </div>
+
+
+          <Fresno
+            weekBefore={weekBefore}
+            fresnoDay1={fresnoDay1}
+            fresnoDay2={fresnoDay2}
+          />
+          <MewComparison
+            mewComparison={mewComparison}
+          />
+          <Slops
+            slops={slops}
+          />
+          <Conclusion
+            conclusion={conclusion}
+          />
+
+          {/* <li className="col-span-4">
           <Link className="btn-ghost" target="_blank" rel="noopener noreferrer" to="/bonus">
             Projects Page
           </Link>
@@ -517,19 +519,19 @@ export default function Template() {
 
 
 
+        </div>
+
+
+
+
+
+
+        {/* <Template /> */}
+
+
+
+
       </div>
-
-
-
-
-
-
-      {/* <Template /> */}
-
-
-
-
-    </div>
     </div>
   )
 }

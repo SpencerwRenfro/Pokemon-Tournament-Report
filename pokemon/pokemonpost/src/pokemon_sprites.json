@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Arceus",
+        "alt": "pokemon-type",
+        "images": ["arceus.png","duraludon-gmax.png","vulpix-alola.png"]
+    },
+    {
+        "title": "Duraludon",
+        "alt": "pokemon-type",
+        "images": ["giratina-origin.png","comfey.png"]
+    }
+]
