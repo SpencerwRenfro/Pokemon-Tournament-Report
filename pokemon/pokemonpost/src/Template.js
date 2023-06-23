@@ -214,11 +214,11 @@ export default function Template() {
 
 
   return (
-    <div className="container mx-auto px-8 text-white">
+    <div className="container mx-auto px-8 dark:text-white">
       <div className="grid grid-cols-12 mt-10   gap-4">
         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
           <p className='date uppercase tracking-wider my-5'>Jun 14, 2023</p>
-          <h1 className=" text-xl lg:text-5xl title pb-1 white font-bold">
+          <h1 className=" text-xl lg:text-5xl title pb-1 font-bold">
             Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
           <div className="flex mt-5 mb-20">

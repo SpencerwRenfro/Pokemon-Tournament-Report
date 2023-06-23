@@ -11,7 +11,7 @@ function Contents(props) {
             </div>            
             <p className='my-1'><a href={`#${props.aboutMeHref}`}>About Me</a></p>
             <p className='my-1'><a href={`#${props.seasonSummary}`}>2022-2023 Season Summary</a></p>
-            <ul className="max-w-md space-y-1 list-disc list-inside pb-5">
+            <ul className="max-w-md space-y-1 list-disc list-inside pb-5 dark:text-white">
             <li><a href={`#${props.saltLakeHref}`}>Salt Lake</a></li>
             <li><a href={`#${props.peoriaHref}`}>Peoria</a></li>
             <li><a href={`#${props.arlingtonHref}`}>Arlington</a></li>

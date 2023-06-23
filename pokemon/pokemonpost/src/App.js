@@ -9,7 +9,7 @@ import ArlingtonList from './components/Lists/ArlingtonList';
 
 function app() {
   return (
-    <div style={{backgroundColor: "#030712", opacity: ""}}>
+    <div>
       <Routes>
           <Route path="/" element={<Template />} ></Route>
           <Route path="bonus" element={<Bonus />}></Route>
