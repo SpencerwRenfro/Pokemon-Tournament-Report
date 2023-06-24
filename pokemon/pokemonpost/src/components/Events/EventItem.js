@@ -61,8 +61,8 @@ function EventItem(props) {
             {
                 props.title === "Local Events" ?
                 <div id={tempID}>
-                    <div className="flex row items-center justify-start gap-4 mb-3">
-                        <h1 className="text-3xl font-bold mb-3">{props.title}</h1>
+                    <div className="flex row gap-4 mb-5">
+                        <h1 className="text-3xl font-bold dark:text-white">{props.title}</h1>
                         <img src={locationFlag} className="rounded" style={{ width: '35px', }} alt="event location" />
                     </div>
                     <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: 350, backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat',  }}>
@@ -72,7 +72,7 @@ function EventItem(props) {
                     </div>
                     <table className="table table-auto w-full mb-10">
                         <thead>
-                            <tr className='text-white'>
+                            <tr className='text-slate-600 dark:text-white'>
                                 <th>Deck</th>
                                 <th>Event</th>
                                 <th>Place</th>
@@ -103,8 +103,8 @@ function EventItem(props) {
                 </div>
                 :
                 <div className="mb-10" id={tempID}>
-                    <div className="flex row items-center justify-start gap-4 mb-3">
-                        <h1 className="text-3xl font-bold">{props.title}</h1>
+                    <div className="flex row gap-4 mb-5">
+                        <h1 className="text-3xl font-bold dark:text-white">{props.title}</h1>
                         <img className="rounded" src={locationFlag} style={{ width: '35px'}} alt="event location" />
                     </div>
                     <div className="bg-cover bg-center rounded-[25px] mb-5" style={{ height: "350px", backgroundImage: `url(${eventImage})`, backgroundRepeat: 'no-repeat' }}>                            
@@ -113,23 +113,23 @@ function EventItem(props) {
                         <div>
                             <img src={deckImg} alt="deck type" />
                         </div>
-                        <h3 className="text-2xl font-bold">{props.deckTitle}</h3>
+                        <h3 className="text-2xl font-bold dark:text-white">{props.deckTitle}</h3>
                     </div>
-                    <div className="grid grid-cols-3 stats py-2 mb-5" style={{backgroundColor: "#030712", border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
+                    <div className="grid grid-cols-3 stats py-2 mb-5 bg-gray-100 dark:bg-zinc-900" style={{border: "solid 1px rgba(166, 173, 186, 0.1)" }}>
                         <div className="stat">
-                            <p className="uppercase tracking-wider text-center text-xs mb-1 text-white">Place</p>
-                            <p className="uppercase tracking-wider text-center font-bold text-2xl text-white">{props.place}</p>
+                            <p className="uppercase tracking-wider text-center text-xs mb-1 opacity-75">Place</p>
+                            <p className="uppercase tracking-wider text-center font-bold text-3xl dark:text-white">{props.place}</p>
                         </div>
                         <div className="stat">                            
-                            <p className="uppercase tracking-wider text-center text-xs mb-1 text-white">Points</p>
-                            <p className="font-bold text-center text-2xl text-white">+{props.points}</p>
+                            <p className="uppercase tracking-wider text-center text-xs mb-1 opacity-75">Points</p>
+                            <p className="font-bold text-center text-3xl dark:text-white">+{props.points}</p>
                         </div>
                         <div className="stat">
-                            <div className="uppercase tracking-wider text-center text-xs mb-1 text-white" style={{ width: "auto" }}>List</div>
+                            <div className="uppercase tracking-wider text-center text-xs mb-1 opacity-75">List</div>
                             <Link target="_blank"rel="noopener noreferrer" to={`/${props.listId}`}>
                                 <div className='flex justify-center'>
                                 <button className="btn btn-ghost">
-                                    <svg  className="inline-block w-6 h-6 mr-2 stroke-current" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="48"><path d="M149.825-280Q137-280 128.5-288.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-450 128.5-458.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-620 128.5-628.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5ZM290-280v-60h550v60H290Zm0-170v-60h550v60H290Zm0-170v-60h550v60H290Z"/></svg>
+                                    <svg  className="inline-block w-6 h-6 mr-2 stroke-current fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="48"><path d="M149.825-280Q137-280 128.5-288.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-450 128.5-458.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-620 128.5-628.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5ZM290-280v-60h550v60H290Zm0-170v-60h550v60H290Zm0-170v-60h550v60H290Z"/></svg>
                                 </button>
                                 </div>
                             </Link>
