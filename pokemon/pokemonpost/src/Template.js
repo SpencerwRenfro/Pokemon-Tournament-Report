@@ -214,41 +214,41 @@ export default function Template() {
 
 
   return (
-    <div className="container mx-auto px-8 dark:text-white">
-      <div className="grid grid-cols-12 mt-10   gap-4">
+    <div className="container mx-auto px-8">
+      <div className="grid grid-cols-12 mt-10 gap-4">
         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
-          <p className='date uppercase tracking-wider my-5'>Jun 14, 2023</p>
-          <h1 className=" text-xl lg:text-5xl title pb-1 font-bold">
+          <p className='date uppercase tracking-wider my-5 opacity-75'>Jun 14, 2023</p>
+          <h1 className=" text-xl lg:text-5xl title pb-1 font-bold dark:text-white">
             Fresno Top 128—A Season Summary + My First &amp; Last Tournament Report
           </h1>
-          <div className="flex mt-5 mb-20">
+          <div className="flex mt-5 mb-10">
             <img width="40" height="40" className="mr-3" src={headshot} alt="headshot" />
-            <p className='pl-2 place-self-center data uppercase tracking-wider'>
+            <p className="pl-2 place-self-center data uppercase tracking-wider opacity-75">
               Tyler Renfro
             </p>
           </div>
 
-          <p className="leading-7">
+          <p className="leading-7 opacity-90">
             <strong>Hey Trainers! The 2023 Fresono Regional Championship is over and it's the
               end of the BST-SVI format.</strong> I decided
             to write this as a way to proccess my 2022-2023 season, but I also wanted to create a piece of content for the
             community. I wanted to make something that's becomming a bit of a lost art, something classic—a tournament report.
           </p>
-          <p className="my-5 leading-7">
+          <p className="my-5 leading-7 opacity-90">
             With access to an infinity pool of gameplay videos, daily live streams, and day-of tournament winning list, players
             today are competing in what's referred to as the ‘e-sports era’ of the Pokemon TCG. The glory days of sites like
             <span> </span>
-            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>The Charizard Lounge</a> and 
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-300">The Charizard Lounge</a> and 
             <span> </span>
-            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-300">Six-Prizes</a> are long gone. Information is everywhere and keeping a deck list private is a way of the past.
           </p>
           
 
-          <p className="leading-7">
+          <p className="leading-7 opacity-90">
             So sit back, relax, and enjoy an article that attempts to pay homage  to the the legacy content of the greats.
-            The days before players had access to all the top 8 lists from <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>limitless.</a> Before
+            The days before players had access to all the top 8 lists from <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-300">limitless.</a> Before
             <span> </span>
-            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline" style={{color: "#90CAF9"}}>pokestats.live</a> leaked your deck to
+            <a href="https://google.com" target="_blank"rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-300">pokestats.live</a> leaked your deck to
             your next round opponent.
           </p>
           <div className='py-10 regular'>
@@ -277,33 +277,33 @@ export default function Template() {
           </div>
 
 
-          <h2 id={aboutMeHref} className="text-4xl font-bold white my-5">About Me</h2>
+          <h2 id={aboutMeHref} className="text-4xl font-bold dark:text-white my-5">About Me</h2>
           <div >
             <img className="w-full mb-3 rounded-[25px]" src={aboutMe} alt="Me and Mike" />
-            <p className="italic w-full mb-5 text-center">That’s me and one of the best friends I’ve made playing this silly game, Mike Hopkins.</p>
+            <p className="italic w-full mb-5 text-center opacity-75">That’s me and one of the best friends I’ve made playing this silly game, Mike Hopkins.</p>
           </div>
-          <p className='pb-10 leading-7'>My name is Tyler Renfro, and I've been playing the Pokémon TCG for the past 8 years
+          <p className='pb-10 leading-7 opacity-90'>My name is Tyler Renfro, and I've been playing the Pokémon TCG for the past 8 years
             (although I originally learned how to play on Pokémon Play It! In 1998). Most of you have
             probably not heard of me. I'm far from a top player—I have zero top cut finishes, aside from top
             64s—my best placement being 50th, I've never been on stream, and I have never qualified for Worlds—I
             simply enjoy the hobby.
           </p>
-          <h2 id={seasonSummary} className="text-4xl font-bold white pb-5">
+          <h2 id={seasonSummary} className="text-4xl font-bold dark:text-white pb-5">
             2022–2023 Season Summary
           </h2>
-          <p className='pb-10 leading-7'>
+          <p className="pb-10 leading-7 opacity-90">
             As mentioned, part of this articles purpose is to help myself process the season, and how my run for a Worlds
             invite went. The year started with the announcement that the 2023 World Championships would be hosted in Yokohama,
             Japan. A little cliché, but this year, the Worlds was going to fall on my 31st birthday. I considered this season
             be my final push for chasing an invite and I wanted to go big. I planned to attend as many events as possible to pursue
             this goal and make my dream happen.
           </p>
-          <p className='pb-10 leading-7'>
+          <p className="pb-10 leading-7 opacity-90">
             Throughout the season, I didn't have an in-person testing group as a result of relocating to Colorado during the COVID-19
             pandemic. Without local play I was struggled to find players in my area to practice with. For the entire season, the only
             games I played on paper were at premiere events.
           </p>
-          <p className='pb-10 leading-7'>
+          <p className="pb-10 leading-7 opacity-90">
             My strategy for deck choice was what I believed to be the strongest deck in format combined with what I could pilot the best.
             Here's a brief recap of my tournament history, deck choices (with lists), and short summary of my runs.
           </p>
@@ -485,10 +485,7 @@ export default function Template() {
               deckImg={eventSchema[11].deckImg}
               deckTitle={eventSchema[11].deckTitle}
             />
-
           </div>
-
-
            <Fresno
             weekBefore={weekBefore}
             fresnoDay1={fresnoDay1}
@@ -503,19 +500,7 @@ export default function Template() {
           <Conclusion
             conclusion={conclusion}
           />
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
       </div>
     </div>
   )
