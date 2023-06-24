@@ -214,7 +214,7 @@ export default function Template() {
 
 
   return (
-    <div className="container mx-auto px-8">
+    <div className="container mx-auto px-8 dark:bg-black">
       <div className="grid grid-cols-12 mt-10 gap-4">
         <div className="col-span-12 md:col-start-4 md:col-span-6 xl:col-start-4 xl:col-span-6">
           <p className='date uppercase tracking-wider my-5 opacity-75'>Jun 14, 2023</p>
